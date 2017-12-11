@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>专家中心</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/center.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<!--导航-->
+<header>
+    <div class="nav-box">
+        <span class="logo"></span>
+        <span class="title"><img src="images/alading.png" alt=""></span>
+        <span class="login"></span>
+        <span class="menu"></span>
+    </div>
+    <div class="menu_box">
+        <div class="mask"></div>
+        <ul class="menu_list">
+            <li class="active">网站首页</li>
+            <li>考证报名</li>
+            <li>培训成长</li>
+            <li>心理咨询</li>
+            <li>专家入驻</li>
+            <li>品牌展示</li>
+            <li>关于我们</li>
+        </ul>
+    </div>
+</header>
+<div class="nav-title">
+    <a href="expert_center.html">专家中心</a>
+    <span>》编辑个人信息</span>
+</div>
+
+<div class="main-edit-wrapper">
+    <div class="edit-con">
+        <div class="edit-title">
+           编辑个人信息
+        </div>
+        <div class="upList">
+            <a href="javascript:void(0);" class="uploadPreview">
+                <img class="img AvatarUrl" src="" />
+            </a>
+            <button id="avatar-btn" class="btn">点击上传</button>
+            <input type="hidden" name="avatar" value="" id="avatar">
+        </div>
+        <ul class="edit-list">
+            <li> <p>真实姓名</p><span class="RealName"></span></li>
+            <li><p>性别</p><span class="Gender"></span></li>
+            <li> <p>生日</p><span class="Birthday"></span></li>
+            <li> <p>学历</p><span class="Education"></span></li>
+            <li class="address">
+                <p>所在城市</p><select class="province" name="province" id=""><option value="">省份</option></select><select class="city" name="city" id=""><option value="">地级市</option></select><select class="area" name="area" id=""><option value="">县区</option></select>
+            </li>
+            <li><p>Email</p><input class="Email" name="email" type="text" placeholder="例：1053081188@qq.com"></li>
+            <li><p>QQ</p><input class="QQ" name="QQ" type="text" placeholder="例：1053081188"></li>
+            <li><p>微信号</p><input class="WeChat" name="" type="text" placeholder="例：1053081188"></li>
+            <li class="consultingFee"><p>咨询费用</p><input class="SerivcePrice" name="" type="text" placeholder="100"><span style="margin-left:10px;">元/小时</span></li>
+            <li><p>资质名称</p><span class="ProfessionalLicensesTitle"></span></li>
+            <li><p>资质证明</p><span>已上传</span></li>
+            <li><p>资质编号</p><span class="ProfessionalLicenseNumber"></span></li>
+            <li><p>从业年限</p><input class="WorkingYears" name="" type="number"></li>
+            <li><p>累计个案小时</p><input class="ConsultingHours" name="" type="number"></li>
+        </ul>
+        <div class="edit-title">
+            从业信息
+        </div>
+        <ul class="edit-list">
+            <li><p>受训背景</p>
+                <textarea  class="edit_box CareerBackground"  name="" id="" cols="30" rows="6"
+                           placeholder="2013年6月，师从曾奇峰《精神分析连续培训项目班》&#10;2014年9月，师从吴熙娟教授《叙事治疗培训班》&#10;2015年5月，师从张同延教授《房树人心理投射技术》中级培训班">
+                </textarea>
+            </li>
+            <li>
+                <p>个人介绍</p>
+                 <textarea  class="edit_box PersonalIntroduction"  name="" id="" cols="30" rows="6"
+                            placeholder="温和贴心 客观睿智 善于倾听&#10;
+                             擅长婚姻家庭中夫妻不和、挽救婚姻及亲子沟通等问题的咨询。从业5年有余，累计咨询时间超过1000小时。主要以精神分析（心理动力学）为基础，熟练运用HTP疗法、认知行为疗法，整合系统家庭治疗，带领来访者发现自己内心深处的资源和力量，找到问题的关键点，以适合来访者需要为中心，帮助来访者走出情感困境。
+                            ">
+                </textarea>
+            </li>
+            <li><p>擅长领域</p><div class="good-list">
+                    <!--<span>情感问题</span><span>婚姻恋爱</span><span>家庭关系</span><span>职场关系</span><span>孩子教育</span><span>性心理</span><span>人际交往</span><span>个人成长</span>-->
+                    <!--<span>情绪压力</span><span>解梦</span><span>法律咨询</span><span>星座占卜</span>-->
+                </div>
+            </li>
+            <li><p>面询地址</p><input class="Address1" name="" type="text" placeholder="江苏省苏州市"></li>
+        </ul>
+        <div class="btn edit_submit">保存</div>
+    </div>
+</div>
+
+
+
+
+
+<!--返回顶部、客服-->
+<div>
+    <div class="backTop"><img src="images/index/backtop.png" alt=""></div>
+</div>
+
+
+<script src="../js/common/jquery.js"></script>
+<script src="js/login_data.js"></script>
+<script src="../js/expert_edit.js"></script>
+<script src="../js/common/plupload.full.min.js"></script>
+
+</body>
+</html>

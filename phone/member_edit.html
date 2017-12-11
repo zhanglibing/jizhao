@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>会员中心</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/center.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<!--导航-->
+<header>
+    <div class="nav-box">
+        <span class="logo"></span>
+        <span class="title"><img src="images/alading.png" alt=""></span>
+        <span class="login"></span>
+        <span class="menu"></span>
+    </div>
+    <div class="menu_box">
+        <div class="mask"></div>
+        <ul class="menu_list">
+            <li class="active">网站首页</li>
+            <li>考证报名</li>
+            <li>培训成长</li>
+            <li>心理咨询</li>
+            <li>专家入驻</li>
+            <li>品牌展示</li>
+            <li>关于我们</li>
+        </ul>
+    </div>
+</header>
+<div class="nav-title">
+    <a href="member_center.html">会员中心</a>
+    <span>》编辑个人信息</span>
+</div>
+<div class="main-edit-wrapper">
+    <div class="edit-con">
+        <div class="upList">
+            <a href="javascript:void(0);" class="uploadPreview">
+                <img class="img AvatarUrl" src="" />
+            </a>
+            <button id="avatar-btn" class="btn">点击上传</button>
+            <input type="hidden" name="avatar" value="" id="avatar">
+        </div>
+        <ul class="edit-list">
+            <li><p>昵称</p><input type="text" class="NickName" name="" placeholder="请输入昵称"></li>
+            <li> <p>真实姓名</p><input type="text" class="RealName" name="RealName" placeholder="请输入真实姓名"></li>
+            <li> <p>生日</p><input type="text" class="Birthday" name="" placeholder="1992-04-09"></li>
+            <li><p>性别</p><div class="sex-box">
+                <div class="male"><b class="active">M</b><span>男</span></div>
+                <div class="female"><b>F</b><span>女</span></div>
+            </div></li>
+            <li><p>所在城市</p><select class="province" name="province" id=""><option value="">省份</option></select><select class="city" name="city" id=""><option value="">地级市</option></select><select class="area" name="area" id=""><option value="">县区</option></select>
+            </li>
+            <li><p>Email</p><input type="text" class="Email" name="Email" placeholder="例：1053081188@qq.com"></li>
+            <li><p>QQ</p><input type="text" class="QQ" name="QQ" placeholder="例：1053081188"></li>
+        </ul>
+        <div class="btn submit_info">保存</div>
+    </div>
+</div>
+
+
+
+
+
+<!--返回顶部、客服-->
+<div>
+    <div class="backTop"><img src="images/index/backtop.png" alt=""></div>
+</div>
+ <script src="../js/common/jquery.js"></script>
+<script src="../js/common/plupload.full.min.js"></script>
+<script src="js/login_data.js"></script>
+<script src="../js/member_edit.js"></script>
+
+</body>
+</html>

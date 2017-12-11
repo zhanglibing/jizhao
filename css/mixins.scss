@@ -1,0 +1,132 @@
+@mixin borderRadius($r){
+  -webkit-border-radius:$r;
+  -moz-border-radius:$r;
+  border-radius:$r;
+}
+
+@mixin borderBox(){
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@mixin bgSize($c){
+  -webkit-background-size: $c;
+  -moz-background-size: $c;
+  -ms-background-size: $c;
+  background-size: $c;
+}
+//全屏
+@mixin fullScreen{
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  bottom:0;
+  margin:0;
+}
+//定位+移动居中
+@mixin middle(){
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+@mixin center($width,$height){
+  width: $width;
+  height: $height;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -($height) / 2;
+  margin-left: -($width) / 2;
+}
+//正方形
+@mixin square1($size){
+  width: $size;
+  height: $size;
+}
+@mixin square2($size,$bg){
+  width: $size;
+  height: $size;
+  background: $bg;
+}
+@mixin square3($w,$h,$bg){
+  width: $w;
+  height: $h;
+  background: $bg;
+}
+
+//圆角矩形  正方形、矩形圆角，矩形圆角加背景颜色
+@mixin roundedRectangle2($size,$r){
+  width: $size;
+  height: $size;
+  border-radius: $r;
+}
+@mixin roundedRectangle3($w,$h,$r){
+  width: $w;
+  height: $h;
+  border-radius: $r;
+}
+@mixin roundedRectangle4($w,$h,$r,$bg){
+  width: $w;
+  height: $h;
+  border-radius: $r;
+  background: $bg;
+}
+//圆
+@mixin circle($size,$bgColor){
+  width: $size;
+  height: $size;
+  background: $bgColor;
+  @include borderRadius($size/2);
+}
+
+//背景图片-尺寸100%    参数没有$h时为正方形
+@mixin bg($name){
+  background: url("../images/" + $name) center center no-repeat;
+}
+@mixin bgImg3($w,$h,$name){
+  width:$w;
+  height:$h;
+  @include bg($name);
+  background-size: 100% 100%;
+}
+@mixin bgImg2($w,$name){
+  width:$w;
+  height:$w;
+  @include bg($name);
+  background-size: 100% 100%;
+}
+
+@mixin input($w,$h){
+  width:$w;
+  height:$h;
+  padding-left:1rem;
+  background: transparent;
+  border:1px solid #aaa;
+  border-radius:4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+//三角形
+@mixin triangle($w,$h,$borderColor){
+  width:0;
+  height:0;
+  border-left:$w/2 solid $borderColor;
+  border-right:$w/2 solid $borderColor;
+  border-top:$h/2 solid $borderColor;
+  border-bottom:$h/2 solid $borderColor;
+}
+
+@mixin textOver($num){
+  display: -webkit-box !important;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  word-break:break-all;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:$num;
+}
+
+

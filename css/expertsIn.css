@@ -1,0 +1,528 @@
+.banner-expert {
+  position: relative;
+  width: 100%;
+  margin-bottom: -1%;
+  color: #fff;
+}
+
+.banner-expert > img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-expert .content {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  margin-left: -600px;
+  width: 1200px;
+}
+
+.banner-expert .content .needYou {
+  width: 495px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.banner-expert .content p {
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.banner-expert .content .list {
+  color: #1387c2;
+  font-size: 18px;
+  width: 700px;
+  margin: 0 auto 80px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.banner-expert .content .list:after {
+  content: '';
+  display: inline-flex;
+  width: 100%;
+  height: 0;
+}
+
+.banner-expert .content .list span {
+  display: inline-block;
+  position: relative;
+  margin-right: 50px;
+}
+
+.banner-expert .content .list span:last-child {
+  margin-right: 0;
+}
+
+.banner-expert .content .list span:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #1387c2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.banner-expert .content .join-us {
+  display: block;
+  width: 380px;
+  line-height: 56px;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.progress-box {
+  position: relative;
+  width: 1200px;
+  padding-top: 50px;
+  margin: 0 auto 50px;
+}
+
+.progress-box > .title {
+  position: absolute;
+  top: 50px;
+  left: 120px;
+  line-height: 26px;
+}
+
+.progress-box .beforeAfter, .progress-box .progress:after, .progress-box .progress:before, .progress-box .progress li p:after, .progress-box .progress li p:before {
+  position: absolute;
+  top: 13px;
+  display: block;
+  content: '';
+  height: 1px;
+}
+
+.progress-box .progress {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 80px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.progress-box .progress:after, .progress-box .progress:before {
+  width: 80px;
+  background: #b8b8b8;
+}
+
+.progress-box .progress:before {
+  left: 0;
+  background: #1387c2;
+}
+
+.progress-box .progress:after {
+  right: 0;
+}
+
+.progress-box .progress li {
+  width: 160px;
+  display: inline-block;
+}
+
+.progress-box .progress li p {
+  position: relative;
+  margin: 0 auto 15px;
+  width: 26px;
+  height: 26px;
+  background: #b8b8b8;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  text-align: center;
+  line-height: 26px;
+  color: #fff;
+}
+
+.progress-box .progress li p:after, .progress-box .progress li p:before {
+  width: 67px;
+  background: #b8b8b8;
+}
+
+.progress-box .progress li p:before {
+  left: 100%;
+}
+
+.progress-box .progress li p:after {
+  right: 100%;
+}
+
+.progress-box .progress li span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.progress-box .progress li.active p {
+  background: #1387c2;
+}
+
+.progress-box .progress li.active p:after, .progress-box .progress li.active p:before {
+  background: #1387c2;
+}
+
+.main {
+  width: 1000px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.main > li {
+  display: none;
+}
+
+.main > li.active {
+  display: block;
+}
+
+.basicInfo > .btn {
+  width: 263px;
+  line-height: 34px;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-size: 18px;
+  font-weight: bold;
+  width: 750px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 30px;
+}
+
+.basicList > li {
+  margin-bottom: 30px;
+}
+
+.basicList > li > span {
+  display: inline-block;
+  text-align: right;
+  line-height: 38px;
+  width: 120px;
+  margin-right: 20px;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.basicList > li > span i {
+  color: red;
+}
+
+.basicList > li > input, .basicList > li > select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 34px;
+  width: 300px;
+  padding-left: 10px;
+  border-radius: 0;
+  vertical-align: top;
+}
+
+.basicList > li select {
+  width: 185px;
+  margin-right: 50px;
+}
+
+.basicList > li .sex-box {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.basicList > li .sex-box > div {
+  display: inline-block;
+  line-height: 22px;
+}
+
+.basicList > li .sex-box > div.male {
+  margin-right: 50px;
+}
+
+.basicList > li .sex-box b {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  vertical-align: top;
+  border: 3px solid #aaa;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0;
+  margin-right: 5px;
+}
+
+.basicList > li .sex-box b.active {
+  border-color: #1387c2;
+}
+
+.basicList > li.lineHeight {
+  margin-bottom: 40px;
+}
+
+.basicList > li.lineHeight > span {
+  line-height: 24px;
+}
+
+.basicList > li.avatar {
+  margin-bottom: 40px;
+}
+
+.basicList > li.avatar .example-box {
+  margin-left: 80px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.basicList > li.avatar .example-box img {
+  margin: 0 10px;
+}
+
+.basicList > li.avatar .example-box .title {
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.basicList > li.avatar .example-box .con {
+  display: inline-block;
+  width: 180px;
+  vertical-align: top;
+}
+
+.basicList > li .upList {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #d2d2d2;
+}
+
+.basicList > li .upList > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+}
+
+.basicList > li .upList > a img {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.basicList > li .upList > a img.active {
+  height: 100%;
+  width: auto;
+}
+
+.basicList > li .upList i {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.basicList > li .upList i.defalut1 {
+  background: url("../images/expret/default1.png") center no-repeat;
+}
+
+.basicList > li .upList i.defalut {
+  background: url("../images/expret/default.jpg") center no-repeat;
+}
+
+.basicList > li .upList i.defalut2 {
+  background: url("../images/expret/default2.png") center no-repeat;
+}
+
+.basicList > li .upList .btn {
+  width: 100px;
+  line-height: 34px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  bottom: -17px;
+}
+
+.background textarea, .background .edit_box {
+  display: inline-block;
+  width: 500px;
+  min-height: 170px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.background textarea .tishi, .background .edit_box .tishi {
+  color: #999;
+}
+
+.background .btn-box {
+  width: 420px;
+  margin: 0 auto;
+}
+
+.background .btn-box .btn {
+  width: 200px;
+  line-height: 34px;
+}
+
+.background .btn-box .btn.pre-btn {
+  margin-right: 20px;
+}
+
+.background .cost-box .hours {
+  margin-left: 10px;
+  width: auto;
+}
+
+.background .agreement {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.background .agreement img {
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.background .agreement a {
+  color: #1387c2;
+  text-decoration: underline;
+}
+
+.good-list {
+  display: inline-block;
+  width: 500px;
+}
+
+.good-list span {
+  display: inline-block;
+  line-height: 24px;
+  width: 100px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-right: 8px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.good-list span:nth-child(8n-3) {
+  margin-left: 30px;
+}
+
+.good-list span:hover, .good-list span.active {
+  background: #00aeef;
+  color: #fff;
+}
+
+.submitOk-box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.submitOk-box .con {
+  width: 176px;
+  height: 176px;
+  background: #1387c2;
+  -webkit-border-radius: 88px;
+  -moz-border-radius: 88px;
+  border-radius: 88px;
+  position: relative;
+  margin: 0 auto 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 26px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.submitOk-box .con .btn {
+  position: absolute;
+  line-height: 24px;
+  width: 180px;
+  left: -2px;
+  bottom: 16px;
+  font-size: 12px;
+  background: #00aeef;
+}
+
+.submitOk-box .error-box .con {
+  background: #e35d83;
+}
+
+.submitOk-box .error-box .con .btn {
+  background: #f489a7;
+}
+
+.submitOk-box .error-box p {
+  margin-bottom: 40px;
+}
+
+.submitOk-box .con-btn {
+  display: inline-block;
+  line-height: 32px;
+  text-align: center;
+  width: 120px;
+  border: 1px solid #767676;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  color: #767676;
+  cursor: pointer;
+}
+
+.submitOk-box .con-btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.submitOk-box .con-btn.toModify {
+  margin-right: 30px;
+}
+
+.submitOk-box .con-btn:hover {
+  background: #00aeef;
+  border-color: #00aeef;
+  color: #fff;
+}
+
+.submitOk-box .con-btn.takePart {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}

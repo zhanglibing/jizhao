@@ -1,0 +1,323 @@
+.banner_grow {
+  width: 100%;
+  height: 3.5rem;
+  background: url("../images/grow/grow.jpg") center center no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 0.6rem;
+}
+
+.main_title {
+  width: 6.6rem;
+  margin: 0 auto 0.3rem;
+  padding-left: 0.4rem;
+  font-size: 14px;
+  position: relative;
+  line-height: 20px;
+}
+
+.main_title:after {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: #000;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  position: absolute;
+  top: 7px;
+  left: 0;
+}
+
+.video_box {
+  padding: 0 0.2rem;
+}
+
+.video_box .video_viewing {
+  overflow: hidden;
+}
+
+.video_box .video_viewing h1 {
+  line-height: 0.5rem;
+  margin-bottom: 12px;
+  padding-left: 0.26rem;
+  font-size: 12px;
+  background: #313131;
+  color: #fff;
+}
+
+.video_box .video_viewing .video-area {
+  width: 100%;
+  position: relative;
+  margin-bottom: 0.1rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.video_box .video_viewing .video-area video {
+  width: 100%;
+}
+
+.video_box .video_viewing .video-area.active .play_btn_mask {
+  display: block;
+}
+
+.video_box .video_viewing .video-area .prompting {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 0.4rem;
+}
+
+.video_box .video_viewing .video-area .prompting.active {
+  display: block;
+}
+
+.video_box .video_viewing .video-area .prompting > div {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video_box .video_viewing .video-area .prompting i {
+  font-style: normal;
+  color: #00aeef;
+}
+
+.video_box .video_viewing .video-area .prompting p {
+  margin-bottom: 0.5rem;
+}
+
+.video_box .video_viewing .video-area .prompting .btn {
+  background: #00aeef;
+  width: 2rem;
+  line-height: 0.6rem;
+  font-size: 14px;
+}
+
+.sharing_article {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.6rem 0.2rem;
+}
+
+.sharing_article .article_items {
+  margin-bottom: 0.2rem;
+}
+
+.sharing_article .item {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.sharing_article .item > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sharing_article .item > div.img_box {
+  width: 2rem;
+  height: 1.56rem;
+  margin-right: 0.6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.sharing_article .item > div.item_content {
+  width: 4.4rem;
+  font-size: 10px;
+}
+
+.sharing_article .item > div.item_content .article_title {
+  margin-bottom: 0.16rem;
+  font-size: 12px;
+}
+
+.sharing_article .item > div.item_content .time_view {
+  margin-bottom: 0.2rem;
+  font-size: 9px;
+}
+
+.sharing_article .item > div.item_content .time_view > div {
+  line-height: 0.3rem;
+  vertical-align: top;
+  display: inline-flex;
+  align-items: center;
+  color: #959595;
+}
+
+.sharing_article .item > div.item_content .time_view > div:last-child {
+  margin-left: 0.6rem;
+}
+
+.sharing_article .item > div.item_content .time_view > div:last-child img {
+  width: 0.34rem;
+}
+
+.sharing_article .item > div.item_content .time_view > div img {
+  margin-right: 0.1rem;
+  width: 0.3rem;
+}
+
+.sharing_article .item > div.item_content .content {
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.page span, .video_select span {
+  line-height: 0.4rem;
+  padding: 0.2rem;
+}
+
+.page span:first-child, .video_select span:first-child {
+  float: left;
+}
+
+.page span:last-child, .video_select span:last-child {
+  float: right;
+}
+
+.middle_title {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background: #1387c2;
+  line-height: 1.5rem;
+}
+
+.good_answer_box {
+  margin: 0 auto 0.8rem;
+  padding-top: 0.3rem;
+}
+
+.good_answer_box .content_box {
+  padding: 0 0.2rem;
+}
+
+.good_answer_box .tab_link {
+  width: 3.8rem;
+  margin: 0 auto 16px;
+}
+
+.good_answer_box .tab_link li {
+  float: left;
+  width: 1.1rem;
+  line-height: 0.5rem;
+  text-align: center;
+  margin-right: 0.2rem;
+  font-size: 12px;
+  -webkit-border-radius: 0.06rem;
+  -moz-border-radius: 0.06rem;
+  border-radius: 0.06rem;
+}
+
+.good_answer_box .tab_link li:last-child {
+  margin-right: 0;
+}
+
+.good_answer_box .tab_link li.active {
+  color: #fff;
+  background: #1387c2;
+}
+
+.good_answer_box .answer_list .list_item {
+  padding: 0.3rem 0 0.2rem;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.good_answer_box .answer_list .list_item:first-child {
+  border-top: 1px solid #ccc;
+}
+
+.good_answer_box .answer_list .list_item .answer_title {
+  padding-left: 0.3rem;
+  line-height: 0.3rem;
+  position: relative;
+  font-size: 12px;
+  margin-bottom: 0.2rem;
+}
+
+.good_answer_box .answer_list .list_item .answer_title:after {
+  content: '';
+  display: block;
+  width: 0.09rem;
+  height: 0.09rem;
+  background: #1387c2;
+  position: absolute;
+  top: 0.1rem;
+  left: 0;
+}
+
+.good_answer_box .answer_list .list_item .answer_content {
+  font-size: 10px;
+  margin-bottom: 0.5rem;
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.good_answer_box .answer_list .list_item .answer_info {
+  font-size: 9px;
+}
+
+.good_answer_box .answer_list .list_item .answer_info .view_num {
+  font-style: normal;
+}
+
+.good_answer_box .answer_list .list_item .answer_info span {
+  margin-right: 0.5rem;
+}
+
+.play_btn_mask {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.play_btn_mask .play_btn {
+  width: 1rem;
+  height: 1rem;
+  background: transparent;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.play_btn_mask .play_btn img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

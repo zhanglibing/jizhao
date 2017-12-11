@@ -1,0 +1,274 @@
+@import "mixins";
+$themeColor:#00aeef;
+
+//专家、用户个人中心
+.main-wrapper{
+  padding-top:50px;
+  margin:0 auto;
+  color:#aaa;
+  .info-box{
+    position: relative;
+    @include borderBox;
+    padding:0 2rem 0.1rem;
+    border-bottom:1px solid #aaa;
+    &>div{
+      display: inline-block;
+    }
+    .center-avatar{
+      position: relative;
+      @include circle(1.3rem,transparent);
+
+      margin-right:0.5rem;
+      .img{
+        @include circle(100%,transparent);
+        overflow: hidden;
+        position: relative;
+      }
+      i{
+        position: absolute;
+        top:0;
+        right:0;
+        @include circle(26px,$themeColor);
+        font-size: 20px;
+        text-indent: 5px;
+        line-height: 24px;
+        font-weight: bold;
+        color:#fff;
+      }
+    }
+    .info-con{
+      width:1.3rem;
+      vertical-align: top;
+      font-size: 12px;
+      img{
+        margin-bottom:0.16rem;
+      }
+      .center-name{
+        font-size: 15px;
+        line-height: 0.32rem;
+        color:$themeColor;
+      }
+    }
+  }
+}
+.operation_btn_list{
+  padding:0.4rem 0.44rem;
+  @include borderBox;
+  li{
+    line-height:0.8rem;
+    border:1px solid #aaa;
+    @include borderRadius(4px);
+    @include borderBox;
+    padding-left:0.3rem;
+    margin-bottom:0.3rem;
+    text-align: left;
+    position: relative;
+    font-size: 12px;
+    color:#aaa;
+    &.cancellation_btn{
+      margin-top:1.6rem;
+    }
+    a{
+      display: block;
+      width:100%;
+      height:100%;
+    }
+    &:hover{
+      background: $themeColor;
+      color:#fff;
+    }
+    span{
+      position: absolute;
+      top:0;
+      right:0;
+    }
+  }
+}
+
+
+//个人信息编辑页面
+.nav-title{
+  padding:0 0.2rem;
+  line-height: 0.9rem;
+  border-bottom:1px solid #ccc;
+  font-size: 14px;
+}
+.main-edit-wrapper{
+  .edit-title{
+    width:100%;
+    padding:0 0.2rem;
+    margin-left:-0.2rem;
+    text-align: left;
+    line-height:0.6rem;
+    background: #eee;
+    margin-bottom:0.3rem;
+    font-size: 14px;
+  }
+  .edit-con{
+    padding:0 0.2rem;
+    font-size: 12px;
+    //图片上传
+    .upList{
+      position: relative;
+      @include circle(1.4rem,#e0e0e0);
+      vertical-align: top;
+      margin:0.3rem auto 0.6rem;
+      border:1px solid #d2d2d2;
+      a{
+        display: block;
+        @include circle(100%,transparent);
+        overflow: hidden;
+        position: relative;
+      }
+      .btn{
+        width: 1.5rem;
+        line-height: 0.5rem;
+        position: absolute;
+        left: 50%;
+        margin-left: -0.75rem;
+        top: 1.2rem;
+      }
+    }
+    .edit-list{
+      margin-bottom:80px;
+      li{
+        margin-bottom:0.2rem;
+        line-height:0.8rem;
+        p{
+          display: inline-block;
+          vertical-align: top;
+          width:1.46rem;
+          text-align: left;
+        }
+        input{
+          width:5.6rem;
+          line-height:0.8rem;
+          @include borderBox;
+          padding-left:0.15rem;
+        }
+        select{
+          width:1.7rem;
+          height:0.8rem;
+          @include borderBox;
+          padding-left:0.15rem;
+          margin-right:0.26rem;
+          @include borderRadius(0);
+          &:last-child{
+            margin-right:0;
+          }
+        }
+        .edit_box{
+          display: inline-block;
+          width:5.5rem;
+          min-height:2rem;
+          border:1px solid #ccc;
+          padding:0.2rem;
+          @include borderBox;
+          line-height:0.36rem;
+          resize: vertical;
+        }
+        .sex-box{
+          display: inline-block;
+          font-size: 16px;
+          &>div{
+            display: inline-block;line-height: 22px;
+            &.male{margin-right:50px;}
+          }
+          b{
+            display: inline-block;
+            width:20px;
+            height:20px;
+            box-sizing: border-box;
+            vertical-align: top;
+            border:3px solid #aaa;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 0;
+            margin-right:5px;
+            &.active{
+              border-color:$themeColor;
+            }
+          }
+        }
+        .good-list{
+          display: inline-block;
+          width:5.6rem;
+          font-size: 12px;
+          line-height:0.44rem;
+            span{
+              display: inline-block;
+              height:0.4rem;
+              line-height:0.44rem;
+              width:1.6rem;
+              text-align: center;
+              border:1px solid #ccc;
+              border-radius:0.2rem;
+              margin-right:0.2rem;
+              margin-bottom:0.2rem;
+              &:nth-child(6n-2){
+                margin-left:0.2rem;
+              }
+              &:nth-child(3n){
+                margin-right:0;
+              }
+              &.active{
+                background: #00aeef;
+                color:#fff;
+              }
+            }
+        }
+        &.consultingFee{
+           input{width:3.4rem;}
+        }
+      }
+
+    }
+    .btn{
+      display: block;
+      margin:0 auto 1rem;
+      width:3.5rem;
+      line-height:0.8rem;
+      background: $themeColor;
+    }
+  }
+}
+
+//专家中心订单列表 //会员
+.order-list-wrapper{
+  padding:0 0.2rem 1rem;
+  font-size: 12px;
+  .item{
+    padding:0.2rem 0;
+    border-bottom:1px solid #ccc;
+    &:after{
+      content: '';
+      display: block;
+      width:100%;
+      height:0;
+      clear:both;
+    }
+    .code{
+      font-size: 10px;
+      margin-bottom:0.16rem;
+    }
+    .box{
+      padding:0.2rem 0.24rem;
+      border:1px solid #ccc;
+      background: #f8f8f8;
+      margin-bottom:0.24rem;
+      &>div{
+        display: flex;
+        justify-content: space-between;
+        &:first-child{margin-bottom:0.3rem;}
+      }
+    }
+    .btn{
+      width:1.8rem;
+      float:right;
+      line-height: 0.7rem;
+      &:disabled{
+        background: #ccc;
+      }
+    }
+  }
+}

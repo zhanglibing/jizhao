@@ -1,0 +1,200 @@
+@import "mixins";
+$themeColor:#00aeef;
+
+.main_about{
+  width:1200px;
+  padding:40px 50px;
+  @include borderBox;
+  margin:0 auto;
+  .about_nav{
+    width:170px;
+    position: relative;
+    top:10px;
+    background: #0a577e;
+    float:left;
+    .nav_list{
+      width:100%;
+      height:auto;
+      background: #1387c2;
+      @include borderBox;
+      padding:30px 0;
+      position: relative;
+      top:-10px;
+      right:-10px;
+      .list{
+        li{
+          line-height: 38px;
+          text-align: center;
+          margin-bottom:10px;
+          color:#fff;
+          font-size: 14px;
+          cursor: pointer;
+          position:relative;
+          &:last-child{
+            margin-bottom:60px;
+          }
+          b{
+            display: none;
+            @include triangle(12px,14px,transparent);
+            border-left-color:#fff;
+            position: absolute;
+            top:12px;
+            right:6px;
+          }
+          &:hover,&.active{
+            background: $themeColor;
+            b{display:block;}
+          }
+
+        }
+      }
+      .logo{
+        text-align: center;
+      }
+    }
+  }
+  .nav_content{
+    width:880px;
+    float:left;
+    margin-left:50px;
+    &>li{
+      display: none;
+      &.active{
+        display: block;
+      }
+      &.company>div{
+        margin-bottom:70px;
+        .title{
+          font-size: 18px;
+          margin-bottom:30px;
+        }
+        p{
+          line-height: 24px;
+          color:#aaa;
+        }
+      }
+      //最新动态
+      &.dynamics{
+        font-size: 14px;
+        .title{
+          border-bottom:1px solid #aaa;
+          font-size: 18px;
+          padding:30px 0 10px;
+          margin-bottom:20px;
+          span{
+            font-size: 14px;
+          }
+        }
+         li{
+           list-style: decimal inside;
+           margin-bottom:12px;
+           cursor: pointer;
+           span{float: right;}
+           &:hover{
+             font-weight: bold;
+           }
+         }
+      }
+      //法律申明
+      &.legal_notices{
+        background: url("../images/about/legal_notices.jpg") center repeat-y;
+        padding:50px 40px;
+        color:#f5f0f1;
+        text-align: left;
+        .main_title{
+          font-size: 18px;
+          color:#fff;
+          margin-bottom:40px;
+          img{vertical-align: middle}
+          span{  font-size: 14px; color:#f5f0f1;}
+        }
+        &>div{margin-bottom:20px;}
+        .title{
+          font-size: 14px;color:#fff;
+          position: relative;
+          left:-5px;
+          margin-bottom:6px;
+        }
+        p{font-size: 12px;line-height: 20px;}
+      }
+      //联系我们
+      &.contact_us{
+         padding:0 50px;
+        .con_title{
+          margin-bottom:30px;
+        }
+        .list{
+          padding-top:30px;
+          border-top:1px solid #aaa;
+          margin-bottom:14px;
+          i{font-style: normal;margin-right:30px;}
+          .item{
+            float: left;
+            width:50%;
+            img{vertical-align: middle;margin-right:8px;}
+            .title{
+              line-height: 20px;
+              font-size: 14px;
+              position: relative;
+              padding-left:10px;
+              margin-bottom:16px;
+              &:before{
+                position: absolute;
+                top:0;
+                left:0;
+                content:"";
+                display: block;
+                width:4px;
+                height:20px;
+                background: $themeColor;
+              }
+            }
+            span{
+              display: inline-block;
+              margin-bottom:8px;
+            }
+          }
+        }
+        .map_box{
+          .map_img{
+            width:694px;
+            border:1px solid #aaa;
+            margin-bottom:20px;
+            img{
+              width:100%;
+            }
+          }
+          img{vertical-align: top;}
+          p{display: inline-block;width:540px;}
+        }
+      }
+      &.recruiting{
+        padding-bottom:50px;
+        &>div{
+          padding:0 40px;
+          line-height: 24px;
+          margin-bottom:30px;
+          &.img{padding:0;}
+          .title{font-size: 18px;margin-bottom:6px;}
+        }
+      }
+
+      &.news_view{
+        padding:20px 60px 50px;
+        .new_title{
+          font-size: 18px;
+          text-decoration: underline;
+          margin-bottom:10px;
+        }
+        .time{
+          margin-bottom:40px;
+          display: block;
+        }
+        .news_content{
+          line-height: 32px;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,410 @@
+.search-wrapper {
+  padding-top: 100px;
+  width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.search-wrapper .search-box {
+  width: 660px;
+  margin: 0 auto 40px;
+}
+
+.search-wrapper .search-box input {
+  width: 530px;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-color: #ccc;
+  padding-left: 30px;
+}
+
+.search-wrapper .search-box .btn {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  line-height: 40px;
+  width: 120px;
+  margin-left: 5px;
+}
+
+.search-wrapper .screening-box {
+  width: 1000px;
+  margin: 0 auto 50px;
+}
+
+.search-wrapper .screening-box li {
+  float: left;
+  margin-right: 50px;
+}
+
+.search-wrapper .screening-box li:last-child {
+  margin-right: 0;
+}
+
+.search-wrapper .screening-box li p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  text-indent: 10px;
+}
+
+.search-wrapper .screening-box li select {
+  width: 300px;
+  height: 40px;
+  padding-left: 20px;
+}
+
+.Experts-box {
+  width: 1000px;
+  margin: 0 auto 50px;
+}
+
+.Experts-box .total {
+  text-align: right;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.Experts-box .total .total-number {
+  font-size: 18px;
+}
+
+.Experts-box .page_box {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+}
+
+.Experts-box .page_box .page {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Experts-list {
+  margin-bottom: 20px;
+}
+
+.Experts-list > li {
+  padding: 40px 0;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.Experts-list > li > div {
+  float: left;
+}
+
+.Experts-list > li .avatar {
+  position: relative;
+  cursor: pointer;
+  width: 130px;
+  height: 130px;
+  background: transparent;
+  -webkit-border-radius: 65px;
+  -moz-border-radius: 65px;
+  border-radius: 65px;
+  overflow: hidden;
+}
+
+.Experts-list > li .info {
+  width: 600px;
+  margin-left: 30px;
+  margin-right: 116px;
+}
+
+.Experts-list > li .info .name {
+  margin-bottom: 15px;
+}
+
+.Experts-list > li .info .introduce {
+  line-height: 20px;
+  margin-bottom: 20px;
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.Experts-list > li .info .good-box span {
+  display: inline-block;
+  width: 88px;
+  line-height: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 1px solid #959595;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.Experts-list > li .contac-box {
+  padding-top: 20px;
+}
+
+.Experts-list > li .contac-box .price {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.Experts-list > li .contac-box .contactHer {
+  cursor: pointer;
+}
+
+.view-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 200px 90px;
+  color: #999;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.view-wrapper .head-info {
+  margin-bottom: 30px;
+}
+
+.view-wrapper .head-info > div {
+  float: left;
+}
+
+.view-wrapper .head-info .avatar {
+  width: 210px;
+  height: 210px;
+  background: transparent;
+  -webkit-border-radius: 105px;
+  -moz-border-radius: 105px;
+  border-radius: 105px;
+  margin-right: 50px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.view-wrapper .head-info .info .top {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.view-wrapper .head-info .info .top .personal-name {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 36px;
+}
+
+.view-wrapper .head-info .info .top .address-box {
+  display: inline-block;
+}
+
+.view-wrapper .head-info .info .top .address-box img {
+  margin-right: 10px;
+}
+
+.view-wrapper .head-info .info .goodAt {
+  width: 420px;
+}
+
+.view-wrapper .head-info .info .goodAt span {
+  display: inline-block;
+  width: 116px;
+  text-align: center;
+  line-height: 26px;
+  margin-right: 20px;
+  margin-bottom: 8px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  color: #fff;
+  background: #c0c0c0;
+}
+
+.view-wrapper .head-info .info .goodAt span:nth-child(3n) {
+  margin-right: 0;
+}
+
+.view-wrapper .charges-main {
+  padding-top: 40px;
+}
+
+.view-wrapper .charges-main .total-box {
+  padding: 10px;
+  height: 50px;
+  background: #f3f3f3;
+  font-size: 20px;
+}
+
+.view-wrapper .charges-main .total-box .zong {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 50px;
+}
+
+.view-wrapper .charges-main .total-box .total-price {
+  font-size: 40px;
+  line-height: 50px;
+  color: #e4393c;
+}
+
+.view-wrapper .charges-main .total-box .total-price i {
+  font-style: normal;
+  font-size: 30px;
+}
+
+.view-wrapper .charges-main .total-box .num-eval {
+  float: right;
+  padding: 10px;
+  padding-left: 20px;
+  text-align: center;
+  border-left: 1px solid #ccc;
+  line-height: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.view-wrapper .charges-main .total-box .num-eval .eval-total {
+  color: #1387c2;
+}
+
+.view-wrapper .charges-main .after-sale {
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.view-wrapper .charges-main .after-sale a {
+  color: #1387c2;
+}
+
+.view-wrapper .charges-main .after-sale .pay-img {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+.view-wrapper .charges-main .after-sale .pay-img span {
+  margin-right: 20px;
+}
+
+.view-wrapper .charges-main .after-sale .pay-img img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.view-wrapper .charges-main .charges-price {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.view-wrapper .charges-main .charges-price .price-box {
+  font-weight: bold;
+  color: #1387c2;
+}
+
+.view-wrapper .charges-main .charges-time {
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+.view-wrapper .charges-main .charges-time .input-box {
+  display: inline-block;
+  position: relative;
+  width: 130px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.view-wrapper .charges-main .charges-time .input-box input {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.view-wrapper .charges-main .charges-time .input-box .add-sub {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 100%;
+  vertical-align: top;
+  padding-right: 4px;
+  padding-top: 4px;
+}
+
+.view-wrapper .charges-main .charges-time .input-box .add-sub span {
+  display: block;
+  width: 16px;
+  height: 14px;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+
+.view-wrapper .charges-main .charges-time .input-box .add-sub span.add {
+  background: url("../images/cons/add.png") center no-repeat;
+}
+
+.view-wrapper .charges-main .charges-time .input-box .add-sub span.sub {
+  background: url("../images/cons/sub.png") center no-repeat;
+}
+
+.view-wrapper .submit-appoint {
+  width: 300px;
+  line-height: 50px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.view-wrapper .title {
+  line-height: 40px;
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.view-wrapper .content {
+  padding: 40px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.view-wrapper .eval-list .item {
+  position: relative;
+  padding: 10px 20px 10px 70px;
+}
+
+.view-wrapper .eval-list .item .user-avatar {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.view-wrapper .eval-list .item .user-avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.view-wrapper .eval-list .item .user-name {
+  display: inline-block;
+  margin-right: 20px;
+}

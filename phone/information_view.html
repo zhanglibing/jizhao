@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>咨询行业信息详情页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/consultation.css">
+
+</head>
+<body>
+<!--导航-->
+<header>
+    <div class="nav-box">
+        <span class="logo"></span>
+        <span class="title"><img src="images/alading.png" alt=""></span>
+        <span class="login"></span>
+        <span class="menu"></span>
+    </div>
+    <div class="menu_box">
+        <div class="mask"></div>
+        <ul class="menu_list">
+            <li class="active">网站首页</li>
+            <li>考证报名</li>
+            <li>培训成长</li>
+            <li>心理咨询</li>
+            <li>专家入驻</li>
+            <li>品牌展示</li>
+            <li>关于我们</li>
+        </ul>
+    </div>
+</header>
+
+<div class="information-view-box">
+    <h1 class="information-title"></h1>
+    <div class="published">发表于：<span class="time"></span>浏览：<span class="through-total"></span></div>
+    <div class="view_img"><img src="" alt=""></div>
+    <div class="content">
+
+    </div>
+</div>
+
+<div class="backTop">
+    <img src="images/index/backtop.png" alt="">
+</div>
+
+<script src="../js/common/jquery.js"></script>
+<script src="js/login_data.js"></script>
+
+<script>
+$(function(){
+    var _init=new InitBlogPost();
+    _init.init();
+})
+</script>
+</body>
+</html>

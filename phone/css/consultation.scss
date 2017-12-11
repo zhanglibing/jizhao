@@ -1,0 +1,327 @@
+@import "mixins";
+$themeColor:#1387c2;
+//心理咨询页面
+.search-wrapper{
+  .search-box{
+    padding:0.4rem 0.44rem;
+    input{
+      width:5.3rem;
+      height:0.7rem;
+      @include borderBox;
+      @include borderRadius(4px);
+      border-color:#ccc;
+      padding-left:20px;
+    }
+    .btn{
+      @include borderRadius(4px);
+      line-height:0.7rem;
+      font-size: 12px;
+      width:1.2rem;
+      margin-left:0.1rem;
+    }
+  }
+  .screening-box{
+   padding:0 0.44rem;
+    margin-bottom:0.6rem;
+    li{
+      float:left;
+      margin-right:0.3rem;
+      &:last-child{margin-right:0;}
+      p{font-size: 12px;font-weight: bold;line-height: 30px;}
+      select{
+        width:2rem;
+        height:0.7rem;
+        padding-left:0.2rem;
+      }
+    }
+  }
+}
+
+//专家列表
+.Experts-box{
+  margin:0 auto 50px;
+  .total{
+    width:7.14rem;
+    margin:0 auto;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom:1px solid #c8c8c8;
+    .total-number{font-size: 14px;}
+  }
+  .page{
+    span{
+      line-height: 0.4rem;
+      padding: 0.2rem;
+      &:last-child{
+        float: right;
+      }
+    }
+
+  }
+
+}
+.Experts-list{
+  padding:0 0.2rem;
+  margin-bottom:0.4rem;
+  &>li{
+    position: relative;
+    padding:0.4rem 0 0.3rem;
+    border-bottom:1px solid #c8c8c8;
+    &>div{
+      float:left;
+    }
+    &>.avatar{
+      position: absolute;
+      top:0.4rem;
+      left:0.15rem;
+      z-index: 2;
+      @include circle(1.6rem,transparent);overflow: hidden;
+    }
+    .info{
+      width:5.6rem;
+      padding-left:2rem;
+      min-height:2.1rem;
+      position: relative;
+      @include borderBox;
+      .name{
+        position: absolute;
+        top:1.8rem;
+        left:0;
+        width:2rem;
+        text-align: center;
+        font-size: 10px;
+      }
+      .introduce{
+        line-height:0.32rem;
+        margin-bottom:0.3rem;
+        min-height:0.7rem;
+        font-size: 10px;
+        @include textOver(3);
+      }
+      .good-box{
+        width:5rem;
+        span{
+          display: inline-block;
+          width:1rem;
+          line-height: 0.34rem;
+          margin-right:0.16rem;
+          margin-bottom:0.1rem;
+          text-align: center;
+          border:1px solid #959595;
+          font-size: 9px;
+          @include borderRadius(0.17rem);
+        }
+      }
+    }
+    .contac-box{
+      width:1.2rem;
+      margin-left:0.3rem;
+      .price{
+        margin-bottom:0.1rem;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .contactHer{
+        width:1.1rem;
+        img{width:100%;}
+      }
+    }
+
+  }
+}
+
+
+//---------------------------专家详情页-----------------/
+.view-wrapper{
+  color:#999;
+   @include borderBox;
+   .head-info{
+     margin-bottom:0.3rem;
+     @include bgImg3(100%,3.5rem,'cons/banner.png');
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     .box>div{
+       display: inline-block;
+       vertical-align: top;
+     }
+     .avatar{
+       @include circle(1.2rem,transparent);
+       margin-right:0.8rem;
+       border:1px solid #ccc;
+       overflow: hidden;
+     }
+     .info{
+       width:4.2rem;
+       .top{
+         margin-bottom:0.26rem;
+         .personal-name{display: inline-block;margin-right:40px;font-size:18px;}
+         .address-box{
+           display: inline-block;
+           img{margin-right:10px;width:0.2rem;}
+         }
+       }
+       .goodAt{
+         span{
+           display: inline-block;
+           width:1.15rem;
+           text-align: center;
+           line-height: 0.3rem;
+           margin-right:0.2rem;
+           margin-bottom:0.1rem;
+           @include borderRadius(13px);
+           color:#fff;
+           background: #c0c0c0;
+           font-size: 9px;
+           &:nth-child(3n){
+             margin-right:0;
+           }
+         }
+       }
+     }
+
+   }
+  .service-charges{
+    padding:0 0.2rem;
+  }
+   .charges-main{
+    padding-top:0.3rem ;
+    .total-box{
+      @include borderBox;
+      padding:0 0.2rem;
+      height:0.7rem;
+      line-height: 0.7rem;
+      margin-bottom:0.12rem;
+      background: #f3f3f3;
+      font-size: 16px;
+      .zong{display: inline-block;vertical-align: top;}
+      .total-price{
+        font-size: 16px;
+        color:#e4393c;
+        i{font-style: normal;font-size: 14px;}
+      }
+      .num-eval{
+        float:right;
+        margin-top:0.1rem;
+        height:0.5rem;
+        padding-left:0.5rem;
+        text-align: center;
+        border-left:1px solid #ccc;
+        line-height:0.25rem;
+        font-size: 10px;
+        .eval-total{color:$themeColor;}
+      }
+    }
+    .after-sale{
+      line-height:0.3rem;
+      margin-bottom:0.3rem;
+      font-size: 9px;
+      a{color:$themeColor;}
+      &>p{margin-bottom:0.2rem;}
+      .pay-img{
+        line-height: 0.36rem;
+        span{margin-right:0.6rem;}
+        img{
+          width:0.36rem;
+          vertical-align: middle;
+          margin-right:5px;
+        }
+      }
+    }
+    .charges-price{
+      font-size:14px;
+      margin-bottom:0.36rem;
+      .price-box{
+        font-weight: bold;
+        color:$themeColor;
+      }
+    }
+    .charges-time{
+      margin-bottom:0.6rem;
+      line-height: 0.8rem;
+      font-size: 14px;
+      .input-box{
+        display: inline-block;
+        position: relative;
+        width:1.6rem;
+        height:0.8rem;
+        margin-right:10px;
+        input{
+          width:100%;height:100%;@include borderBox;font-size: 18px;padding-left:4px;
+        }
+        .add-sub{
+          position: absolute;
+          top:0;
+          right:0;
+          width:20px;
+          height:100%;
+          vertical-align: top;
+          padding-right:4px;
+          padding-top:4px;
+          span{
+            display:block;
+            width:16px;
+            height:14px;
+            cursor: pointer;
+            margin-bottom:4px;
+            &.add{
+              background:url("../images/cons/add.png") center no-repeat;
+            }
+            &.sub{
+              background:url("../images/cons/sub.png") center no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+  .submit-appoint{
+    display: block;
+    width:6.6rem;
+    line-height: 0.8rem;
+    @include borderRadius(4px);
+    font-size:18px;
+    margin:0 auto 0.8rem;
+  }
+
+  .personal-idt,.personal-style,.user-eval{
+    padding:0 0.2rem;
+  }
+  .title{
+    font-size:15px;
+    padding-bottom:0.16rem;
+    color:#2b2b2b;
+    border-bottom:1px solid #ccc;
+  }
+  .content{
+    padding:0.35rem 0;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  //评价列表
+
+  .eval-list{
+    .item{
+      position: relative;
+      padding-left:0.7rem;
+      margin-bottom:0.6rem;
+      font-size: 11px;
+      .user-avatar{
+        position: absolute;
+        top:5px;
+        left:0;
+        width:0.55rem;
+        height:0.55rem;
+        @include borderRadius(50%);
+        overflow: hidden;
+        img{
+          width:100%;
+          height:100%;
+        }
+      }
+      .user-name{display: inline-block;margin-right:0.3rem;}
+    }
+  }
+}

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>专家入驻-基本信息</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/expertsIn.css">
+
+</head>
+<body>
+<!--导航-->
+<header>
+    <div class="nav-box">
+        <span class="logo"></span>
+        <span class="title"><img src="images/alading.png" alt=""></span>
+        <span class="login"></span>
+        <span class="menu"></span>
+    </div>
+    <div class="menu_box">
+        <div class="mask"></div>
+        <ul class="menu_list">
+            <li>网站首页</li>
+            <li>考证报名</li>
+            <li>培训成长</li>
+            <li>心理咨询</li>
+            <li class="active">专家入驻</li>
+            <li>品牌展示</li>
+            <li>关于我们</li>
+        </ul>
+    </div>
+</header>
+
+<div class="progress-box">
+    <ul class="progress">
+        <li class="active">
+            <p>1</p><span>基本信息</span>
+        </li><li>
+            <p>2</p><span>从业背景</span>
+        </li><li>
+            <p>3</p><span>提交审核</span>
+        </li><li>
+            <p>4</p><span>审核通过</span>
+        </li>
+    </ul>
+</div>
+<ul class="main">
+    <!--基本信息-->
+    <li class="basicInfo active">
+        <div class="main-title">
+            基本信息
+        </div>
+        <ul class="basicList">
+            <li><span>手机号：</span><input class="Username" type="text"></li>
+            <li><span>真实姓名<i>*</i>：</span><input class="RealName" type="text"></li>
+            <li class="avatar"><span>头像<i>*</i>：</span>
+                <div class="upList">
+                    <i class="defalut"></i>
+                    <a href="javascript:void(0);" class="uploadPreview">
+                        <img class="img avatarImg" src="../images/login_avatar.png" />
+                    </a>
+                    <button id="avatar-btn" class="btn"></button>
+                    <input type="hidden" class="AvatarUrl" name="avatar" value="" id="avatar">
+                </div>
+
+            </li>
+            <li class="photoId lineHight"><span>本人手持<i>*</i>：<br>身份证照片</span>
+                <div class="upList">
+                    <i class="defalut1"></i>
+                    <a href="javascript:void(0);" class="IdPicture uploadPreview">
+                        <img class="img IdPictureImg" src=""  />
+                    </a>
+                    <button id="photoId-btn" class="btn"></button>
+                    <input type="hidden" class="IdPictureUrl" name="avatar" value="" id="photoId">
+                </div>
+            </li>
+            <li><span>性别<i>*</i>：</span><div class="sex-box">
+                <div class="male"><b class="active">M</b><span>男</span></div>
+                <div class="female"><b>F</b><span>女</span></div>
+            </div></li>
+            <li class="address">
+                <span>所在城市<i>*</i>：</span><select class="province" name="province" id=""><option value="">省份</option></select><select class="city" name="city" id=""><option value="">地级市</option></select><select class="area" name="area" id=""><option value="">县区</option></select>
+            </li>
+            <li>
+                <span>证件类型<i>*</i>：</span><select class="IDType" name="" id="">
+                <option value="大陆身份证">大陆身份证</option>
+            </select>
+            </li>
+            <li><span>证件号码<i>*</i>：</span><input class="IDNumber" type="text"></li>
+            <li>
+                <span>学历<i>*</i>：</span><select class="Education" name="" id="">
+                <option value="">请选择学历</option>
+                <option value="专科">专科</option>
+                <option value="本科">本科</option>
+                <option value="硕士">硕士</option>
+                <option value="博士">博士</option>
+                <option value="博士后">博士后</option>
+                </select>
+            </li>
+            <li><span>微信号<i>*</i>：</span><input class="WeChat" type="text" name="weChat"></li>
+            <li><span>面询地址<i>*</i>：</span><input class="Address1" type="text" name="" placeholder="列：江苏-苏州"></li>
+        </ul>
+        <div class="btn basic_submit">进行下一步</div>
+    </li>
+    <!--从业背景-->
+    <li class="background">
+        <div class="main-title">
+            从业背景
+        </div>
+        <ul class="basicList">
+            <li>
+                <span>资质名称<i>*</i>：</span><select class="ProfessionalLicensesTitle" name="" id="">
+                    <option value="">请选择资质名称</option>
+                    <option value="心理咨询师二级">心理咨询师二级</option>
+                    <option value="心理咨询师三级">心理咨询师三级</option>
+                    <option value="婚姻家庭咨询师一级">婚姻家庭咨询师一级</option>
+                    <option value="婚姻家庭咨询师二级">婚姻家庭咨询师二级</option>
+                    <option value="心理治疗师">心理治疗师</option>
+                    <option value="健康管理师">健康管理师</option>
+                    <option value="社会工作师">社会工作师</option>
+                </select>
+            </li>
+            <li>
+                <span>资质证明<i>*</i>：</span>
+                <div class="upList">
+                    <i class="defalut2"></i>
+                    <a href="javascript:void(0);" class="ProfessionalLicenses uploadPreview">
+                        <img class="img" src=""  />
+                    </a>
+                    <button id="qualification-btn" class="btn">点击上传</button>
+                    <input type="hidden" class="ProfessionalLicensesUrl" name="avatar" value="" id="qualification">
+                </div>
+            </li>
+            <li><span>资质编号<i>*</i>：</span><input class="ProfessionalLicenseNumber"  type="text"></li>
+            <li><span>从业年限<i>*</i>：</span><input class="WorkingYears" type="number"></li>
+            <li class="lineHight"><span>累计个案<i>*</i>：<br>(小时)&nbsp;&nbsp;&nbsp;&nbsp;</span><input class="ConsultingHours" type="number"></li>
+            <li><span>受训背景<i>*</i>：</span><textarea  class="edit_box CareerBackground"  name="" id="" cols="30" rows="7"
+                        placeholder="2013年6月，师从曾奇峰《精神分析连续培训项目班》&#10;2014年9月，师从吴熙娟教授《叙事治疗培训班》&#10;2015年5月，师从张同延教授《房树人心理投射技术》中级培训班">
+                </textarea>
+            </li>
+            <li><span>个人介绍<i>*</i>：</span><textarea  class="edit_box PersonalIntroduction"  name="" id="" cols="30" rows="7"
+                         placeholder="示例&#10;国家二级心理咨询师&#10;婚姻家庭咨询师&#10;中国科学院心理研究所硕士&#10;中国心理学会会员&#10;XXX市心理学会会员">
+                </textarea>
+            </li>
+            <li><span>擅长领域<i>*</i>：</span><div class="good-list">
+                     <!--<span>情感问题</span><span>婚姻恋爱</span><span>家庭关系</span><span>职场关系</span>-->
+                     <!--<span>孩子教育</span><span>性心理</span><span>人际交往</span><span>个人成长</span>-->
+                     <!--<span>情绪压力</span><span>解梦</span><span>法律咨询</span><span>星座占卜</span>-->
+                 </div>
+            </li>
+            <!--<li><span>执业风格<i>*</i>：</span><textarea  class="edit_box PracticeStyle"  name="" id="" cols="30" rows="7"-->
+                       <!--placeholder="示例&#10;温和贴心 客观睿智 善于倾听&#10;擅长婚姻家庭中夫妻不和、挽救婚姻及亲子沟通等问题的咨询。从业5年有余，累计咨询时间超过1000小时。主要以精神分析（心理动力学）为基础，熟练运用HTP疗法、认知行为疗法，整合系统家庭治疗，带领来访者发现自己内心深处的资源和力量，找到问题的关键点，以适合来访者需要为中心，帮助来访者走出情感困境。">-->
+                <!--</textarea>-->
+            <!--</li>-->
+            <li class="referrer"><span>推荐人<i>*</i></span><input class="Recommender" name="referrer" type="text"></li>
+            <li class="cost-box"><span>咨询费用<i>*</i>：</span><input class="SerivcePrice" name="cost" type="number" ><span class="hours">元/小时</span></li>
+            <li class="agreement"><span></span><img src="images/grow/anony.png" alt="">同意 <a href="expertAgreement.html" target="_blank">专家入驻协议</a></li>
+        </ul>
+        <div class="btn-box">
+            <button class="pre-btn btn">上一步</button><button class="btn background_submit">提交</button>
+        </div>
+    </li>
+    <!--提交审核-->
+    <li class="submitOk-box">
+        <div class="ok-box">
+            <div class="con">
+                <img src="images/expret/submitOk.png" alt="">
+                <p>已提交，正在审核</p>
+                <botton class="btn">如果有疑问请联系客服询问</botton>
+            </div>
+            <a href="training_grow.html" class="takePart con-btn">参与公益咨询</a>
+        </div>
+        <div class="error-box" style="display: none;">
+            <div class="con">
+                <img src="images/expret/error.png" alt="">
+                <p>审核失败</p>
+                <botton class="btn">请修改信息重新提交</botton>
+            </div>
+            <p>如果有疑问请联系客服询问</p>
+            <div class="btn-box">
+                <span class="toModify con-btn">重新修改</span>
+                <span class="back con-btn"><a href="index.html">返回</a></span>
+            </div>
+        </div>
+    </li>
+</ul>
+
+<!--返回顶部、客服-->
+<div>
+    <div class="backTop"><img src="images/index/backtop.png" alt=""></div>
+</div>
+<script src="../js/common/jquery.js"></script>
+<script src="js/login_data.js"></script>
+<script src="../js/common/plupload.full.min.js"></script>
+<script src="../js/expertsIn.js"></script>
+
+</body>
+</html>

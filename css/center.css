@@ -1,0 +1,301 @@
+.main-wrapper {
+  width: 1000px;
+  padding-top: 50px;
+  margin: 0 auto;
+  color: #aaa;
+}
+
+.main-wrapper .center-info {
+  border-bottom: 1px solid #aaa;
+  height: 160px;
+  overflow: hidden;
+}
+
+.main-wrapper .info-box {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  background: transparent;
+  -webkit-border-radius: 160px;
+  -moz-border-radius: 160px;
+  border-radius: 160px;
+  padding: 56px 60px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  margin: 0 auto;
+}
+
+.main-wrapper .info-box > div {
+  display: inline-block;
+}
+
+.main-wrapper .info-box .center-avatar {
+  width: 82px;
+  height: 82px;
+  background: transparent;
+  -webkit-border-radius: 41px;
+  -moz-border-radius: 41px;
+  border-radius: 41px;
+  overflow: hidden;
+  margin-right: 20px;
+  position: relative;
+}
+
+.main-wrapper .info-box .info-con {
+  vertical-align: top;
+}
+
+.main-wrapper .info-box .info-con img {
+  margin-bottom: 10px;
+}
+
+.main-wrapper .info-box .info-con .center-name {
+  font-size: 18px;
+  color: #00aeef;
+}
+
+.main-wrapper .info-box i {
+  position: absolute;
+  top: 26px;
+  right: 40px;
+  width: 26px;
+  height: 26px;
+  background: #00aeef;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  font-size: 20px;
+  text-indent: 5px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.operation_btn_list {
+  padding: 40px 80px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.operation_btn_list li {
+  line-height: 46px;
+  border: 1px solid #aaa;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.operation_btn_list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.operation_btn_list li:hover {
+  background: #00aeef;
+  color: #fff;
+}
+
+.operation_btn_list li span {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.cancellation_btn {
+  width: 260px;
+  line-height: 34px;
+  display: block;
+  margin: 0 auto 60px;
+  background: #dbdbdb;
+  font-size: 16px;
+  color: #2b2b2b;
+}
+
+.cancellation_btn:hover {
+  background: #00aeef;
+  color: #fff;
+}
+
+.main-edit-wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.main-edit-wrapper .edit-title {
+  text-align: center;
+  line-height: 40px;
+  background: #eee;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.main-edit-wrapper .edit-con {
+  padding: 40px;
+  font-size: 14px;
+}
+
+.main-edit-wrapper .edit-con .upList {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  background: #e0e0e0;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  border-radius: 45px;
+  vertical-align: top;
+  margin: 0 auto 50px;
+  border: 1px solid #d2d2d2;
+}
+
+.main-edit-wrapper .edit-con .upList a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.main-edit-wrapper .edit-con .upList .btn {
+  width: 96px;
+  line-height: 24px;
+  position: absolute;
+  left: 50%;
+  margin-left: -48px;
+  bottom: -10px;
+}
+
+.main-edit-wrapper .edit-con .edit-list {
+  margin-bottom: 80px;
+}
+
+.main-edit-wrapper .edit-con .edit-list li {
+  margin-bottom: 20px;
+  line-height: 38px;
+}
+
+.main-edit-wrapper .edit-con .edit-list li p {
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.main-edit-wrapper .edit-con .edit-list li input, .main-edit-wrapper .edit-con .edit-list li select {
+  width: 500px;
+  line-height: 36px;
+  height: 36px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
+.main-edit-wrapper .edit-con .edit-list li .edit_box {
+  display: inline-block;
+  width: 500px;
+  min-height: 150px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 20px;
+  resize: vertical;
+}
+
+.main-edit-wrapper .edit-con .edit-list li .sex-box {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.main-edit-wrapper .edit-con .edit-list li .sex-box > div {
+  display: inline-block;
+  line-height: 22px;
+}
+
+.main-edit-wrapper .edit-con .edit-list li .sex-box > div.male {
+  margin-right: 50px;
+}
+
+.main-edit-wrapper .edit-con .edit-list li .sex-box b {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  vertical-align: top;
+  border: 3px solid #aaa;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0;
+  margin-right: 5px;
+}
+
+.main-edit-wrapper .edit-con .edit-list li .sex-box b.active {
+  border-color: #00aeef;
+}
+
+.main-edit-wrapper .edit-con .edit-list li .good-list {
+  width: 500px;
+  display: inline-block;
+  line-height: 26px;
+}
+
+.main-edit-wrapper .edit-con .edit-list li .good-list span {
+  width: 100px;
+  display: inline-block;
+  line-height: 24px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.main-edit-wrapper .edit-con .edit-list li .good-list span:nth-child(4n) {
+  margin-right: 0;
+}
+
+.main-edit-wrapper .edit-con .edit-list li .good-list span:nth-child(8n-3) {
+  margin-left: 30px;
+}
+
+.main-edit-wrapper .edit-con .edit-list li .good-list span:hover, .main-edit-wrapper .edit-con .edit-list li .good-list span.active {
+  color: #fff;
+  background: #00aeef;
+}
+
+.main-edit-wrapper .edit-con .edit-list li.address select {
+  width: 160px;
+  height: 36px;
+}
+
+.main-edit-wrapper .edit-con .edit-list li.address select.city {
+  margin: 0 10px;
+}
+
+.main-edit-wrapper .edit-con .btn {
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  line-height: 34px;
+  background: #00aeef;
+}

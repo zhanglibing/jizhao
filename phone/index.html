@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>阿拉丁教育</title>
+    <script src="js/config.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+
+</head>
+<body>
+<!--导航-->
+<header>
+    <div class="nav-box">
+        <span class="logo"></span>
+        <span class="title"><img src="images/alading.png" alt=""></span>
+        <span class="login"></span>
+        <span class="menu"></span>
+    </div>
+    <div class="menu_box">
+        <div class="mask"></div>
+        <ul class="menu_list">
+            <li class="active"><a href="index.html">网站首页</a></li>
+            <li><a href="testReg.html">考试报名</a></li>
+            <li><a href="training_grow.html">培训成长</a></li>
+            <li><a href="consultation.html">心理咨询</a></li>
+            <li><a href="expertsIn.html">专家入驻</a></li>
+            <li><a href="brand_display.html">品牌展示</a></li>
+            <li><a href="about.html">关于我们</a></li>
+        </ul>
+    </div>
+</header>
+<div class="swiper-container" id="banner">
+    <div class="swiper-wrapper" >
+        <div class="swiper-slide"><a href="testReg.html"><img src="images/banner1.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a href="expertsIn.html"><img src="images/banner2.jpg" alt=""></a></div>
+        <div class="swiper-slide"><a href="training_grow.html"><img src="images/banner3.jpg" alt=""></a></div>
+    </div>
+    <!--分页器 -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<!--数据展示-->
+<div class="dataDisplay">
+    <ul class="clear">
+        <li class="d-3">
+            <div class="data server1"><div><p>
+                <span class="number_box">
+                </span>X<span class="number_box">
+                </span><span class="number_box">
+                </span>
+                </p><b>小时</b></div></div>
+            <div class="title">
+                <div><span>服务响应</span></div>
+                <p>TIME</p>
+            </div>
+        </li>
+        <li class="d-3">
+            <div class="data collage_number"><div>
+                <p>
+                <span class="number_box">
+                </span><span class="number_box">
+                </span><span class="number_box">
+                </span><span class="number_box">
+                </span>
+                </p>
+                <b>个</b></div></div>
+            <div class="title">
+                <div><span>领证人数</span></div>
+                <p>PEOPLE</p>
+            </div>
+        </li>
+        <li class="d-3">
+            <div class="data expert_num"><div>
+                <p>
+                 <span class="number_box">
+                </span><span class="number_box">
+                </span><span class="number_box">
+                </span>
+                </p>
+                <b>个</b></div></div>
+            <div class="title">
+                <div><span>专家人数</span></div>
+                <p>PEOPLE</p>
+            </div>
+        </li>
+        <li class="d-3">
+            <div class="data customers"><div>
+                <p>
+                    <span class="number_box">
+                </span><span class="number_box">
+                </span><span class="number_box">
+                </span><span class="number_box">
+                </span><span class="number_box">
+                </span>
+                </p>
+                <b>个</b></div></div>
+            <div class="title">
+                <div><span>服务客户</span></div>
+                <p>PEOPLE</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--考生专区-->
+<div class="CandidateArea">
+   <div class="area-title">
+       <img src="images/examineeZone.png" alt="">
+   </div>
+    <div class="main-box">
+        <div class="video-box">
+            <div class="video-area active">
+                <!--<video id="video" src="video/11.mp4">-->
+                <video id="video"  src="../video/index.mp4"  preload="auto" loop poster="../video/index.jpg">
+                    <!-- controls autobuffer loop  设置自带音量、进度条 、全屏按钮-->
+                    <!--<source  type="video/mp4">-->
+                    <!--<source src="mov_bbb.ogg" type="video/ogg">-->
+                    您的浏览器不支持 HTML5 video 标签。
+                </video>
+                <div class="play_btn_mask">
+                    <div class="play_btn"><img src="images/video/pause.png" alt=""></div>
+                </div>
+                <!--<div class="play_progress clear">-->
+                    <!--<div class="total_length">-->
+                        <!--<div class="play_length"><b></b></div>-->
+                    <!--</div>-->
+                    <!--<div class="time_process">-->
+                        <!--<span class="current_time">00:00</span>/ <span class="totle_time">02:01</span>-->
+                    <!--</div>-->
+                    <!--<div class="sound">-->
+                        <!--<div class="img_box"></div>-->
+                        <!--<div class="max_sound">-->
+                            <!--<div class="sound_length"><b></b></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="fullScreen" ></div>-->
+                <!--</div>-->
+
+            </div>
+
+        </div>
+        <ul class="con-list">
+           <li>
+               <h2 class="title"><span>+</span>心理咨询师证</h2>
+               <p>
+                   心理咨询师是协助求助者解决各类心理问题的人。心理咨询最一般、最主要的对象，是健康人群或存在心理问题的人群。健康人群会面对许多家庭、择业、求学、社会适应等问题，他们会期待做出理想的选择，顺利地度过人生的各个阶段，求得自身能力的最大发挥和寻求生活的良好质量。心理咨询师可以从心理学的角度，提供中肯的发展咨询，给出相应的帮助、引导。
+               </p>
+               <button class="btn"><a href="testReg.html">详细了解</a></button>
+           </li>
+           <li>
+               <h2 class="title"><span>+</span>婚姻家庭咨询师</h2>
+               <p>
+                   婚姻家庭咨询师是为在恋爱、婚姻、家庭生活中遇到各种问题的求助者提供咨询和辅导服务的人员。                   </p>
+               <button class="btn"><a href="testReg.html">详细了解</a></button>
+           </li>
+           <li>
+                <h2 class="title"><span>+</span>健康管理师</h2>
+                <p>
+                    健康管理师是从事个体和群体从营养和心理两方面健康的检测、分析、评估以及健康咨询、指导和危险因素干预等工作的专业人员。为了适应全面建设小康社会的需要，提高全民族的健康意识和身体素质，培养和造就健康管理人才，人力资源和社会保障部教育培训中心推出健康管理师岗位能力培训课程。                    </p>
+                <button class="btn"><a href="testReg.html">详细了解</a></button>
+            </li>
+           <li>
+                <h2 class="title"><span>+</span>社会工作师</h2>
+                <p>
+                    社会工作师，是指遵循助人自助的价值理念，利用个案、社区、小组等专业方法，以帮助机构和他人发挥自身潜能，协调社会关系、促进社会公正为职业的社会服务人员。目前我国社会工作师大多活跃在民政、妇联、慈善机构、社会团体机构、社区服务机构、街道办事处等各个领域，并开始逐步向卫生、教育、社会保障、心理辅导等广大领域扩展。他们发挥的维系社会良好秩序的作用如今日益得到社会的认可。                    </p>
+                <button class="btn"><a href="testReg.html">详细了解</a></button>
+            </li>
+        </ul>
+        <a href="testReg.html" class="more_click">MORE +</a>
+    </div>
+</div>
+
+<!--咨询师专区-->
+<div class="consultantArea">
+    <div class="area-title">
+        <img src="images/consultant.png" alt="">
+    </div>
+    <div class="main-box clear">
+        <ul class="info-list">
+
+        </ul>
+        <div class="info-link_box">
+            <span class="pre"></span>
+            <div class="lun_box">
+                <ul class="info-link">
+                    <li class="link-item active"><img src="../images/index/info1.png" alt=""></li>
+                    <li class="link-item"><img src="../images/index/info2.png" alt=""></li>
+                    <li class="link-item"><img src="../images/index/info3.png" alt=""></li>
+                    <li class="link-item"><img src="../images/index/info4.png" alt=""></li>
+                    <li class="link-item"><img src="../images/index/info5.png" alt=""></li>
+                    <li class="link-item"><img src="../images/index/info6.png" alt=""></li>
+                    <li class="link-item"><img src="../images/index/info7.png" alt=""></li>
+                </ul>
+            </div>
+            <span class="next"></span>
+        </div>
+    </div>
+    <a href="consultation.html" class="more_click">MORE +</a>
+</div>
+
+<!--咨询行业信息-->
+<div class="information">
+    <div class="area-title">
+        <img src="images/information.png" alt="">
+    </div>
+    <div class="main-box">
+        <ul class="list">
+            <li class="clear">
+                <div class="img"><img src="images/index/artcal1.jpg" alt=""></div>
+                <div class="content-box">
+                    <h2 class="title">诊后心里咨询有多重要?</h2>
+                    <p class="time">2012/03/22</p>
+                    <p class="content">这次主要讲解了什么是心理创伤：心理创伤常指日常生活中的与精神状态相关的负性影响</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--共享文章-->
+<div class="article">
+    <div class="area-title">
+        <img src="images/article.png" alt="">
+    </div>
+    <div class="swiper-container1">
+        <div class="swiper-wrapper">
+            <!--<div class="swiper-slide">-->
+                <!--<a href="javascript:;" class="con-box">-->
+                    <!--<div class="pic"><img src="images/index/pic1.png" alt=""></div>-->
+                    <!--<div class="title">不同阶段孩子教育的不同方式</div>-->
+                    <!--<div class="time">2017/05-25</div>-->
+                    <!--<div class="con">孩子的成长可划分为三个阶段，0-6岁，6-12岁，<br>12-18岁。每个阶段，你的方法都要，有所变通，有所不同。</div>-->
+                    <!--<div class="more">more-</div>-->
+                <!--</a>-->
+            <!--</div>-->
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+</div>
+
+<!--返回顶部、客服-->
+<div>
+    <!--<div class="contactHer-click shangqiao"><img src="images/customerService.png" alt=""></div>-->
+    <div class="backTop"><img src="images/index/backtop.png" alt=""></div>
+</div>
+
+<!--底部-->
+<footer>
+    <div class="title-box">
+      <div>知心贴心，健康关怀，<strong>为社会发展做贡献</strong></div>
+    </div>
+    <div class="content clear">
+        <div class="left">
+            <img src="images/qrcode.jpg" alt="">
+            <p>上海霁朝健康管理咨询有限公司</p>
+        </div>
+        <div class="right">
+            <div class="address">
+                <img src="images/localize.png" alt="">
+                <p>上海市奉贤区金汇镇金闸公路1259号3幢1367室</p>
+                <p>苏州相城区善济路158号峰汇商务广场4幢一单元1928</p>
+            </div>
+            <div class="phone">
+                <img src="images/phone.png" alt="">
+                <p>上海：<a href="tel:021-60700181"></a>021-60700181</p>
+                <p> 苏州：<a href="tel:0512-69576237">0512-69576237</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../js/common/jquery.js"></script>
+<script src="js/login_data.js"></script>
+<script src="../js/indexData.js"></script>
+<script src="js/index.js"></script>
+<script src="js/swiper-3.3.1.min.js"></script>
+<script>
+    $(".shangqiao").click(function(event) {
+        if ($('#nb_invite_ok').length > 0) {
+            $('#nb_invite_ok').click();
+        }
+    });
+</script>
+</body>
+</html>

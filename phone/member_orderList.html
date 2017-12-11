@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>会员中心-订单列表</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/center.css">
+
+</head>
+<body>
+<!--导航-->
+<header>
+    <div class="nav-box">
+        <span class="logo"></span>
+        <span class="title"><img src="images/alading.png" alt=""></span>
+        <span class="login"></span>
+        <span class="menu"></span>
+    </div>
+    <div class="menu_box">
+        <div class="mask"></div>
+        <ul class="menu_list">
+            <li class="active">网站首页</li>
+            <li>考证报名</li>
+            <li>培训成长</li>
+            <li>心理咨询</li>
+            <li>专家入驻</li>
+            <li>品牌展示</li>
+            <li>关于我们</li>
+        </ul>
+    </div>
+</header>
+<div class="nav-title">
+    <a href="member_center.html">会员中心</a>
+    <span>》订单列表</span>
+</div>
+
+<div class="order-list-wrapper">
+    <ul class="list-items">
+        <li class="item">
+            <div class="box">
+                <div><span class="name">张利兵</span><span class="price">￥830</span></div>
+                <div><span class="state">已支付，待咨询</span><span class="time-box">2017/08/26 23:24</span></div>
+            </div>
+            <button class="btn">联系客服</button>
+        </li>
+    </ul>
+</div>
+
+
+<!--返回顶部、客服-->
+<div>
+    <div class="backTop"><img src="images/index/backtop.png" alt=""></div>
+</div>
+<script src="../js/common/jquery.js"></script>
+<script src="js/login_data.js"></script>
+<script>
+    var init=new InitMemberOrder({isPhone:true});
+    init.init();
+</script>
+</body>
+</html>

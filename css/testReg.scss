@@ -1,0 +1,405 @@
+@import "mixins";
+$themeColor:#00aeef;
+//考证报名页
+.banner-test{
+  width:100%;
+  height:630px;
+  margin-bottom:20px;
+  background: url("../images/banner2.png") center no-repeat;
+  .content{
+    width:940px;
+    padding-top:320px;
+    margin:0 auto;
+    text-align: center;
+    h1{
+      margin-bottom:40px;
+    }
+    p{
+      line-height: 24px;
+    }
+  }
+}
+.main-content{
+  width:1200px;
+  margin:0 auto 50px;
+  &>p{
+    margin-bottom:50px;
+    font-size: 16px;
+  }
+  .documents-list{
+    width:890px;
+    margin:0 auto;
+    .item{
+      float:left;
+      width:170px;
+      margin-right:68px;
+      margin-bottom:40px;
+      &:nth-child(4n){
+        margin-right:0;
+      }
+      .pic{
+        position: relative;
+        height:225px;
+        width:100%;
+        @include borderRadius(4px);
+        overflow: hidden;
+        cursor: pointer;
+        transition: all ease 0.5s;
+        &:hover{
+          transform: scale(1.07) translate(0,-8px);
+        }
+        &.more{
+          text-align: center;
+          border:1px solid #bfbfbf;
+          color:#bfbfbf;
+          font-size: 16px;
+          .con{
+            @include middle;
+            p:first-child{margin-bottom:10px;}
+          }
+        }
+
+      }
+      &:nth-child(1){
+        .pic{@include bgImg3(100%,225px,'testReg/pic1.png');}
+        .document-title{background: #3f3826;}
+      }
+      &:nth-child(2){
+        .pic{@include bgImg3(100%,225px,'testReg/pic2.png');}
+        .document-title{background: #a4403f;}
+      }
+      &:nth-child(3){
+        .pic{@include bgImg3(100%,225px,'testReg/pic3.png');}
+        .document-title{background: #1f468b;}
+      }
+      &:nth-child(4){
+        .pic{@include bgImg3(100%,225px,'testReg/pic4.png');}
+        .document-title{background: #7e3635;}
+      }
+      &:nth-child(5){
+        .pic{@include bgImg3(100%,225px,'testReg/pic5.png');}
+        .document-title{background: #080a2f;}
+      }
+      &:nth-child(n+6){
+        .pic{@include bgImg3(100%,225px,'testReg/pic1.png');}
+        .document-title{background: #3f3826;}
+      }
+      &:last-child{
+        .pic{background: #fff;}
+      }
+      .document-title{
+        position: relative;
+        text-align: center;
+        line-height: 32px;
+        margin:10px 0 14px;
+        @include borderRadius(4px);
+        font-size: 14px;
+        color:#fff;
+        &:after,&:before{
+          content:'';
+          display: block;
+          height:1px;
+          background: #fff;
+          width:12px;
+          position: absolute;
+          top:50%;
+        }
+        &:after{
+          right:5px;
+        }
+        &:before{
+          left:5px;
+        }
+      }
+      .buy-box{
+        span{
+          display: inline-block;
+          width:60px;
+          line-height:24px;
+          text-align: center;
+          border:1px solid #bfbfbf;
+          cursor: pointer;
+          @include borderRadius(12px);
+          &.consulting{
+            float:right;
+          }
+          &:hover{
+            background: #00aeef;
+            border-color:#00aeef;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+//
+.main-wrapper{
+  width:1000px;
+  margin:0 auto;
+  padding-top:40px;
+  color:#747474;
+  .purchase-box{
+    margin-bottom:40px;
+    &>div{
+      float:left;
+    }
+    .purchase-pic{
+      width:270px;
+      margin-right:110px;
+      .img-view{
+        height:310px;
+        border:1px solid #ccc;
+        padding:10px;
+        overflow: hidden;
+        margin-bottom:10px;
+        position: relative;
+        img{
+          @include middle;
+          max-width: 100%;
+          max-width: 100%;
+        }
+      }
+      .img-list{
+        li{
+          position: relative;
+          float: left;
+          width:48px;
+          height:48px;
+          padding:5px;
+          @include borderBox;
+          background: #f6f6f6;
+          border:1px solid #f6f6f6;
+          margin-right:16px;
+          overflow: hidden;
+          cursor: pointer;
+          &:last-child{
+            margin-right:0;
+          }
+          &:hover,&.active{
+             border-color:#ff0000;
+          }
+          img{
+            @include middle;
+            max-width: 100%;
+            max-height: 100%;
+          }
+
+        }
+      }
+      .prompting{
+        padding-top:60px;
+      }
+    }
+    .purchasing{
+      width:540px;
+      .title{
+        position: relative;
+        height:40px;
+        padding-left:30px;
+        margin-bottom:10px;
+        &:after,&:before{
+          position: absolute;
+          bottom:0;
+          left:0;
+          content:'';
+          display: inline-block;
+          width:5px;
+          height:20px;
+          background: #000;
+
+        }
+        &:before{
+          top:0;
+          background: $themeColor;
+        }
+        .name{
+          font-size: 18px;
+        }
+        .en{
+          font-size: 14px;
+          color:#cdcdcd;
+        }
+      }
+      .total-box{
+        padding:5px;
+        height:40px;
+        width:460px;
+        margin-bottom:8px;
+        background: #f3f3f3;
+        font-size: 20px;
+        .zong{display: inline-block;vertical-align: top;line-height: 40px;}
+        .total-price{
+          font-size: 30px;
+          line-height:40px;
+          color:#e4393c;
+          i{font-style: normal;font-size: 24px;}
+        }
+        .num-eval{
+          float:right;
+          padding:5px;
+          padding-left:20px;
+          text-align: center;
+          border-left:1px solid #ccc;
+          line-height:15px;
+          font-size: 14px;
+          .eval-total{color:$themeColor;}
+        }
+      }
+      .sale{
+        margin-bottom:20px;
+        a{color:$themeColor;}
+      }
+      .requirements{margin-bottom:20px;}
+      .serviceFree{
+        margin-bottom:20px;
+        .con{
+          display: inline-block;
+          width:170px;
+          line-height: 24px;
+          text-align: center;
+          margin-left:12px;
+          @include borderRadius(4px);
+          background: #e5e5e5;
+          color:#2b2b2b;
+        }
+      }
+      .level-box{
+        .level-list{
+          margin-left:12px;
+          margin-bottom:20px;
+          display: inline-block;
+          .item{
+            display: inline-block;
+            width:70px;
+            text-align: center;
+            border:1px solid #ccc;
+            line-height: 40px;
+            margin-right:20px;
+            color:#2b2b2b;
+            cursor: pointer;
+            @include borderRadius(4px);
+            &.active,&:hover{
+              color:#fff;
+              background: $themeColor;
+              border-color:$themeColor;
+            }
+          }
+        }
+      }
+      .btn-box{
+        margin-bottom:20px;
+        button{
+          font-size: 18px;
+          margin-right:30px;
+          @include borderRadius(4px);
+          background: $themeColor;
+          &.submit-buy{
+            background: #dd3239;
+          }
+        }
+      }
+      .pay-img{
+        span{margin-right:40px;}
+        img{vertical-align: middle;margin-right:6px;}
+      }
+    }
+  }
+  .documents-box{
+    position: relative;
+    .tab{
+      height:48px;
+      background: #f4f4f4;
+      li{
+        display: inline-block;
+        width:170px;
+        line-height: 48px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover,&.active{
+          background: $themeColor;
+          color:#fff;
+        }
+      }
+
+    }
+    .contactHer{
+      position: absolute;
+      top:7px;
+      right:7px;
+      width:120px;
+      line-height:34px;
+      color:#fff;
+      background: $themeColor;
+      text-align: center;
+      cursor: pointer;
+      img{vertical-align: middle;margin-right:5px;}
+
+      }
+  }
+
+  .details-wrapper{
+    padding:40px 0;
+    &>li{
+      display: none;
+      &:hover,&.active{
+        display: block;
+      }
+    }
+  }
+  .details-box{
+    width:800px;
+    margin:0 auto;
+    font-size: 14px;
+    line-height: 2;
+    &>div{
+      margin-bottom:20px;
+
+      &.img{width:1200px;margin-left:-200px;}
+      &>span{
+        display: inline-block;
+        width:80px;
+        vertical-align: top;
+        text-align: right;
+      }
+      &>p{
+        display: inline-block;
+        width:700px;
+      }
+      i{
+        font-style: normal;
+        display: inline-block;
+        width:300px;
+      }
+    }
+  }
+  //评价列表
+  .user-eval{
+    padding:0 100px 50px;
+    .eval-list{
+      .item{
+        position: relative;
+        padding:20px 20px 10px 70px;
+        .user-avatar{
+          position: absolute;
+          top:15px;
+          left:0;
+          width:50px;
+          height:50px;
+          @include borderRadius(50%);
+          overflow: hidden;
+          img{
+            width:100%;
+            height:100%;
+          }
+        }
+        .user-name{display: inline-block;margin-right:20px;}
+      }
+    }
+  }
+
+}

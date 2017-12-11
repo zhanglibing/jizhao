@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>专家入驻</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/expertsIn.css">
+    <link rel="icon" href="images/ico.png" type="image/x-icon">
+</head>
+<body>
+<!--导航-->
+<header>
+    <div class="nav-box clear">
+        <div class="logo"><img src="images/index/nav_logo.png" alt=""></div>
+        <ul class="nav_link">
+            <li class="nav_item">网站首页</li>
+            <li class="nav_item">考证报名</li>
+            <li class="nav_item">培训成长</li>
+            <li class="nav_item">心理咨询</li>
+            <li class="nav_item active">专家入驻</li>
+            <li class="nav_item">品牌展示</li>
+            <li class="nav_item">关于我们</li>
+        </ul>
+        <div class="login-entrance">
+            <a class="goLogin">登录</a><a class="goReg">注册</a>
+        </div>
+        <div class="loginAvatar">
+            <img src="images/login_avatar.png" alt="">
+        </div>
+    </div>
+</header>
+
+<!--专家入驻banner-->
+<div class="banner-expert">
+    <img src="images/testReg/bannerExpert.jpg" alt="">
+    <div class="content">
+       <div class="needYou"><img src="images/testReg/needYou.png" alt=""></div>
+        <p>心理咨询是一种实践性很强的职业，我们为您提供了最专业、最广阔的提升与展示平台，以及完善的成长体系建设，让您在释放自身能量的同时，也可以实现自我完善。我们能够并肩战斗，<br>
+            用更优质的服务获取到更多的用户，用好互联网这个工具，推动心理咨询行业的发展和社会化普及并提升心理咨询师收益。
+        </p>
+        <div class="list clear">
+            <span>自由的工作时间</span>
+            <span>丰富的案例督导</span>
+            <span>丰厚的咨询报酬</span>
+            <span>宝贵的成长机会</span>
+        </div>
+        <a class="join-us btn" href="javascript:;">Join Us/加入我们</a>
+    </div>
+
+</div>
+
+<div>
+    <div class="contactHer-click"><img src="images/customerService.png" alt=""></div>
+    <div class="backTop"><img src="images/index/backtop.png" alt=""></div>
+</div>
+<!--底部-->
+<footer>
+    <div class="content clear">
+        <div class="left">
+            <img src="images/qrcode.jpg" alt="">
+            <p>上海霁朝健康管理咨询有限公司</p>
+        </div>
+        <div class="right">
+            <p class="line"><a href="">快速链接 >></a></p>
+            <ul class="foot-nav clear">
+                <li><a href="testReg.html">考证报名</a></li>
+                <li><a href="training_grow.html">培训成长</a></li>
+                <li><a href="consultation.html">心理咨询</a></li>
+                <li><a href="expertsIn.html">专家入驻</a></li>
+                <li><a href="brand_display.html">品牌展示</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href=" http://eln.cnmfc.cn/welcome/index">阿拉丁智能学习</a></li>
+            </ul>
+            <div class="contact clear">
+                <div class="address">
+                    <img src="images/localize.png" alt="">
+                    <span>上海市奉贤区金汇镇金闸公路1259号3幢1367室</span> <br>
+                    <p>苏州相城区善济路158号峰汇商务广场4幢一单元1928</p>
+                </div>
+                <div class="phone">
+                    <img src="images/phone.png" alt="">
+                    <span>上海：021-60700181</span>
+                    <p>苏州：0512-69576237</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<script src="js/common/jquery.js"></script>
+<script src="js/login.js"></script>
+<script>
+    $(function(){
+        $('.join-us').on('click', function () {
+            if (userInfo) {
+                if(userInfo.StatusForConsultant==4){//审核通过
+                    window.location.href="expert_center.html";
+                    return false;
+                }
+                window.location.href = "expertsAudit.html";
+                return false;
+            }
+            loginInit.createLoginHtml('login');
+        })
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发表话题</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/center.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<!--导航-->
+<header>
+    <div class="nav-box">
+        <span class="logo"></span>
+        <span class="title"><img src="images/alading.png" alt=""></span>
+        <span class="login"></span>
+        <span class="menu"></span>
+    </div>
+    <div class="menu_box">
+        <div class="mask"></div>
+        <ul class="menu_list">
+            <li class="active">网站首页</li>
+            <li>考证报名</li>
+            <li>培训成长</li>
+            <li>心理咨询</li>
+            <li>专家入驻</li>
+            <li>品牌展示</li>
+            <li>关于我们</li>
+        </ul>
+    </div>
+</header>
+
+<div class="nav-title">
+    <a href="expert_center.html">专家中心</a>
+    <span>》发表话题</span>
+</div>
+
+<div class="published-wrapper clear">
+    <input type="text" name="title" placeholder="在此编辑标题(至多20个字)" >
+    <div class="upList">
+        <a href="javascript:void(0);" class="uploadPreview">
+            <img class="img publish_img" src="" />
+        </a>
+        <button id="publish-btn" class="publish-btn">添加图片</button>
+        <input type="hidden" name="avatar" value="" id="publish">
+    </div>
+    <textarea  class="edit_box" name="" id="" cols="30" rows="10" placeholder="再此说出你想说的..."></textarea>
+    <button class="btn published-submit">发表</button>
+</div>
+
+<!--返回顶部、客服-->
+<div>
+    <div class="backTop"><img src="images/index/backtop.png" alt=""></div>
+</div>
+<script src="../js/common/jquery.js"></script>
+<script src="../js/common/plupload.full.min.js"></script>
+<script src="js/login_data.js"></script>
+<script src="../js/published.js"></script>
+
+</body>
+</html>

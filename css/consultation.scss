@@ -1,0 +1,297 @@
+@import "mixins";
+$themeColor:#1387c2;
+//心理咨询页面
+.search-wrapper{
+  padding-top:100px;
+  width:1200px;
+  margin:0 auto 40px;
+  .search-box{
+    width:660px;margin:0 auto 40px;
+    input{
+      width:530px;
+      height:40px;
+      @include borderBox;
+      @include borderRadius(4px);
+      border-color:#ccc;
+      padding-left:30px;
+    }
+    .btn{
+      @include borderRadius(4px);
+      line-height:40px;
+      width:120px;
+      margin-left:5px;
+    }
+  }
+  .screening-box{
+    width:1000px;
+    margin:0 auto 50px;
+    li{
+      float:left;
+      margin-right:50px;
+      &:last-child{margin-right:0;}
+      p{font-size: 16px;font-weight: bold;line-height: 30px;text-indent: 10px;}
+      select{
+        width:300px;
+        height:40px;
+        padding-left:20px;
+      }
+    }
+  }
+}
+
+//专家列表
+.Experts-box{
+  width:1000px;
+  margin:0 auto 50px;
+  .total{
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom:1px solid #c8c8c8;
+    .total-number{font-size: 18px;}
+  }
+
+  .page_box {
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    .page{
+      @include middle;
+    }
+  }
+}
+.Experts-list{
+  margin-bottom:20px;
+  &>li{
+    padding:40px 0;
+    border-bottom:1px solid #c8c8c8;
+    //cursor: pointer;
+    &>div{
+      float:left;
+    }
+    .avatar{
+      position: relative;
+      cursor: pointer;
+      @include circle(130px,transparent);overflow: hidden;
+    }
+    .info{
+      width:600px;
+      margin-left:30px;
+      margin-right:116px;
+      .name{
+        margin-bottom:15px;
+      }
+      .introduce{
+        line-height: 20px;
+        margin-bottom:20px;
+        display: -webkit-box !important;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        word-break:break-all;
+        -webkit-box-orient:vertical;
+        -webkit-line-clamp:3;
+      }
+      .good-box{
+        span{
+          display: inline-block;
+          width:88px;
+          line-height: 20px;
+          margin-right:10px;
+          margin-bottom:10px;
+          text-align: center;
+          border:1px solid #959595;
+          @include borderRadius(10px)
+        }
+      }
+    }
+    .contac-box{
+      padding-top:20px;
+      .price{
+        margin-bottom:20px;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      .contactHer{
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+
+
+//---------------------------专家详情页-----------------/
+.view-wrapper{
+  width:1200px;
+  margin:0 auto;
+  padding:40px 200px 90px;
+  color:#999;
+  @include borderBox;
+   .head-info{
+     margin-bottom:30px;
+     &>div{
+       float:left;
+     }
+     .avatar{
+       @include circle(210px,transparent);
+       margin-right:50px;
+       border:1px solid #ccc;
+       overflow: hidden;
+     }
+     .info{
+       .top{
+         margin-bottom:20px;
+         padding-top:20px;
+         .personal-name{display: inline-block;margin-right:40px;font-size: 36px;}
+         .address-box{
+           display: inline-block;
+           img{margin-right:10px;}
+         }
+       }
+       .goodAt{
+         width:420px;
+         span{
+           display: inline-block;
+           width:116px;
+           text-align: center;
+           line-height: 26px;
+           margin-right:20px;
+           margin-bottom:8px;
+           @include borderRadius(13px);
+           color:#fff;
+           background: #c0c0c0;
+           &:nth-child(3n){
+             margin-right:0;
+           }
+         }
+       }
+     }
+
+   }
+  .charges-main{
+    padding-top:40px;
+    .total-box{
+      padding:10px;
+      height:50px;
+      background: #f3f3f3;
+      font-size: 20px;
+      .zong{display: inline-block;vertical-align: top;line-height: 50px;}
+      .total-price{
+        font-size: 40px;
+        line-height:50px;
+        color:#e4393c;
+        i{font-style: normal;font-size: 30px;}
+      }
+      .num-eval{
+        float:right;
+        padding:10px;
+        padding-left:20px;
+        text-align: center;
+        border-left:1px solid #ccc;
+        line-height:15px;
+        font-size: 14px;
+        cursor: pointer;
+        .eval-total{color:$themeColor;}
+      }
+    }
+    .after-sale{
+      line-height:30px;
+      margin-bottom:20px;
+      a{color:$themeColor;}
+      .pay-img{
+        display: inline-block;
+        margin-left:100px;
+        span{margin-right:20px;}
+        img{
+          vertical-align: middle;
+          margin-right:5px;
+        }
+      }
+    }
+    .charges-price{
+      font-size: 22px;
+      margin-bottom:30px;
+      .price-box{
+        font-weight: bold;
+        color:$themeColor;
+      }
+    }
+    .charges-time{
+      margin-bottom:30px;
+      font-size: 22px;
+      .input-box{
+        display: inline-block;
+        position: relative;
+        width:130px;
+        height:40px;
+        margin-right:10px;
+        input{
+          width:100%;height:100%;@include borderBox;font-size: 30px;padding-left:10px;
+        }
+        .add-sub{
+          position: absolute;
+          top:0;
+          right:0;
+          width:20px;
+          height:100%;
+          vertical-align: top;
+          padding-right:4px;
+          padding-top:4px;
+          span{
+            display:block;
+            width:16px;
+            height:14px;
+            cursor: pointer;
+            margin-bottom:4px;
+            &.add{
+              background:url("../images/cons/add.png") center no-repeat;
+            }
+            &.sub{
+              background:url("../images/cons/sub.png") center no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+  .submit-appoint{
+    width:300px;
+    line-height: 50px;
+    @include borderRadius(4px);
+    font-size: 24px;
+    margin-bottom:50px;
+  }
+
+  .title{
+    line-height: 40px;
+    font-size: 20px;
+    border-bottom:1px solid #ccc;
+  }
+  .content{
+    padding:40px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  //评价列表
+  .eval-list{
+    .item{
+      position: relative;
+      padding:10px 20px 10px 70px;
+      .user-avatar{
+        position: absolute;
+        top:5px;
+        left:0;
+        width:50px;
+        height:50px;
+        @include borderRadius(50%);
+        overflow: hidden;
+        img{
+          width:100%;
+          height:100%;
+        }
+      }
+      .user-name{display: inline-block;margin-right:20px;}
+    }
+  }
+}

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>心理咨询</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/consultation.css">
+    <link rel="stylesheet" href="css/jquery.pagination.css" />
+    <link rel="icon" href="images/ico.png" type="image/x-icon">
+</head>
+<body>
+<!--导航-->
+<header>
+    <div class="nav-box clear">
+        <div class="logo"><img src="images/index/nav_logo.png" alt=""></div>
+        <ul class="nav_link">
+            <li class="nav_item">网站首页</li>
+            <li class="nav_item">考证报名</li>
+            <li class="nav_item">培训成长</li>
+            <li class="nav_item active">心理咨询</li>
+            <li class="nav_item">专家入驻</li>
+            <li class="nav_item">品牌展示</li>
+            <li class="nav_item">关于我们</li>
+        </ul>
+        <div class="login-entrance">
+            <a class="goLogin">登录</a><a class="goReg">注册</a>
+        </div>
+        <div class="loginAvatar">
+            <img src="images/login_avatar.png" alt="">
+        </div>
+    </div>
+</header>
+<div class="empty-top"></div>
+
+<!--搜索-->
+<div class="search-wrapper">
+   <div class="search-box">
+       <input class="search_content" type="text" placeholder="烦恼关键词、专家名字"><button class="search_submit btn">开启搜索</button>
+   </div>
+    <ul class="screening-box clear">
+        <li>
+            <p>擅长领域</p>
+            <select class="good-list" name="good-list" id="">
+                <!--<option value="">婚姻恋爱</option>-->
+                <!--<option value="">家庭关系</option>-->
+                <!--<option value="">职场关系</option>-->
+                <!--<option value="">孩子教育</option>-->
+            </select>
+        </li>
+        <li>
+            <p>起步价格</p>
+            <select class="price" name="" id="">
+                <option value="">请选择价格区域</option>
+                <option value="0-50">50元以下</option>
+                <option value="50-100">50-100元</option>
+                <option value="100-200">100-200元</option>
+                <option value="200-300">200-300元</option>
+                <option value="300-500">300-500元</option>
+                <option value="500-10000">500元以上</option>
+            </select>
+        </li>
+        <li>
+            <p>地域选择</p>
+            <select class="province" name="" id="">
+                <option value="">选择省份</option>
+            </select>
+        </li>
+    </ul>
+</div>
+
+<!--专家列表-->
+<div class="Experts-box">
+    <div class="total"><i class="total-number"></i>&nbsp;位专家入驻</div>
+    <ul class="Experts-list">
+        <!--<li class="clear">-->
+            <!--<div class="avatar"><img src="images/cons/avatar1.png" alt=""></div>-->
+            <!--<div class="info">-->
+                <!--<h2 class="name">扬琴</h2>-->
+                <!--<p class="introduce">1996年 西南师范大学教育学硕士   2008年 国家二级注册心理咨询师（上海）   上海某国家公务员行业心理培训讲师、心理教练、心理咨询师，丰富教学经验   华东师范大学心理咨询室 多年咨询经历，积累个案4000余小时，丰富实战经验。</p>-->
+                <!--<div class="good-box">-->
+                    <!--<span>婚姻恋爱</span>-->
+                    <!--<span>个人成长</span>-->
+                    <!--<span>孩子教育</span>-->
+                    <!--<span>性心理</span>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="contac-box">-->
+                <!--<div class="price"><i class="price-number">200</i><span>&nbsp;元</span></div>-->
+                <!--<div class="contactHer"><img src="images/cons/contactHer.png" alt=""></div>-->
+            <!--</div>-->
+        <!--</li>-->
+    </ul>
+    <div class="page_box">
+       <div id="pagination" class="page"></div>
+    </div>
+</div>
+
+
+<!--返回顶部、客服-->
+<div>
+    <div class="contactHer-click"><img src="images/customerService.png" alt=""></div>
+    <div class="backTop"><img src="images/index/backtop.png" alt=""></div>
+</div>
+<div class="backTop"><img src="images/index/backtop.png" alt=""></div>
+<!--底部-->
+<footer>
+    <div class="content clear">
+        <div class="left">
+            <img src="images/qrcode.jpg" alt="">
+            <p>上海霁朝健康管理咨询有限公司</p>
+        </div>
+        <div class="right">
+            <p class="line"><a href="">快速链接 >></a></p>
+            <ul class="foot-nav clear">
+                <li><a href="testReg.html">考证报名</a></li>
+                <li><a href="training_grow.html">培训成长</a></li>
+                <li><a href="consultation.html">心理咨询</a></li>
+                <li><a href="expertsIn.html">专家入驻</a></li>
+                <li><a href="brand_display.html">品牌展示</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href=" http://eln.cnmfc.cn/welcome/index">阿拉丁智能学习</a></li>
+            </ul>
+            <div class="contact clear">
+                <div class="address">
+                    <img src="images/localize.png" alt="">
+                    <span>上海市奉贤区金汇镇金闸公路1259号3幢1367室</span> <br>
+                    <p>苏州相城区善济路158号峰汇商务广场4幢一单元1928</p>
+                </div>
+                <div class="phone">
+                    <img src="images/phone.png" alt="">
+                    <span>上海：021-60700181</span>
+                    <p>苏州：0512-69576237</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<script src="js/common/jquery.js"></script>
+<script src="js/login.js"></script>
+<script src="js/common/jquery.pagination.min.js"></script>
+<script src="js/consultation.js"></script>
+</body>
+</html>

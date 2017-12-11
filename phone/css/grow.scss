@@ -1,0 +1,336 @@
+@import "mixins";
+$themeColor:#1387c2;
+.banner_grow{
+  @include bgImg3(100%,3.5rem,'grow/grow.jpg');
+  margin-bottom:0.6rem;
+}
+
+.main_title{
+  width:6.6rem;
+  margin:0 auto 0.3rem;
+  padding-left:0.4rem;
+  font-size: 14px;
+  position: relative;
+  line-height:20px;
+  &:after{
+    content:'';
+    display: block;
+    @include circle(4px,#000);
+    position: absolute;
+    top:7px;
+    left:0;
+  }
+}
+
+.video_box{
+  padding:0 0.2rem;
+  .video_viewing{
+    overflow: hidden;
+    h1{
+      line-height: 0.5rem;
+      margin-bottom:12px;
+      padding-left:0.26rem;
+      font-size:12px;
+      background: #313131;
+      color:#fff;
+    }
+    .video-area{
+      width:100%;
+      position: relative;
+      margin-bottom:0.1rem;
+      @include borderBox;
+      video{
+        width:100%;
+      }
+      &.active{
+        .play_btn_mask{
+          display: block;
+        }
+      }
+      .prompting{
+        display: none;
+        width:100%;
+        height:100%;
+        position: absolute;
+        top:0;
+        left:0;
+        background: rgba(0,0,0,.7);
+        color:#fff;
+        font-size: 14px;
+        text-align: center;
+        line-height: 0.4rem;
+        &.active{
+          display: block;
+        }
+        &>div{
+          width:100%;
+          @include middle;
+        }
+        i{font-style: normal;color:#00aeef;}
+        p{
+          margin-bottom:0.5rem;
+        }
+        .btn{
+          background:#00aeef ;
+          width:2rem;
+          line-height: 0.6rem;
+          font-size:14px;
+        }
+      }
+    }
+
+  }
+
+}
+
+.sharing_article{
+  @include borderBox;
+  padding:0.6rem 0.2rem;
+  .article_items{
+    margin-bottom:0.2rem;
+  }
+  .item{
+    padding:0.3rem 0;
+    border-bottom:1px solid #ccc;
+    &>div{
+      display: inline-block;
+      vertical-align: top;
+      &.img_box{
+        width:2rem;
+        height:1.56rem;
+        margin-right:0.6rem;
+        position: relative;
+        overflow: hidden;
+      }
+      &.item_content{
+        width:4.4rem;
+        font-size: 10px;
+        .article_title{
+          margin-bottom:0.16rem;
+          font-size: 12px;
+        }
+        .time_view{
+          margin-bottom:0.2rem;
+          font-size: 9px;
+          &>div{
+            line-height:0.3rem;
+            vertical-align: top;
+            display: inline-flex;
+            align-items: center;
+            color:#959595;
+            &:last-child{
+              margin-left:0.6rem;
+              img{
+                width:0.34rem;
+              }
+            }
+            img{margin-right:0.1rem;width:0.3rem;}
+          }
+        }
+        .content{
+          display: -webkit-box !important;
+          overflow:hidden;
+          text-overflow:ellipsis;
+          word-break:break-all;
+          -webkit-box-orient:vertical;
+          -webkit-line-clamp:2;;
+        }
+      }
+    }
+  }
+
+}
+.page,.video_select{
+  span{
+    line-height: 0.4rem;
+    padding:0.2rem;
+    &:first-child{
+      float:left;
+    }
+    &:last-child{
+      float:right;
+    }
+  }
+}
+
+
+.middle_title{
+  width:100%;
+  text-align: center;
+  font-size: 14px;
+  color:#fff;
+  background: $themeColor;
+  line-height: 1.5rem;
+  //margin-bottom:50px;
+
+}
+
+.good_answer_box{
+  margin:0 auto 0.8rem;
+  padding-top:0.3rem;
+  .content_box{
+   padding:0 0.2rem;
+  }
+  .tab_link{
+    width:3.8rem;
+    margin:0 auto 16px;
+   li{
+     float:left;
+     width:1.1rem;
+     line-height:0.5rem;
+     text-align: center;
+     margin-right:0.2rem;
+     font-size: 12px;
+     @include borderRadius(0.06rem);
+     &:last-child{margin-right:0;}
+     &.active{
+       color:#fff;
+       background: $themeColor;
+     }
+   }
+  }
+  .answer_list{
+    .list_item{
+      padding:0.3rem 0 0.2rem;
+      border-bottom:1px solid #ccc;
+      cursor: pointer;
+      &:first-child{
+        border-top:1px solid #ccc;
+      }
+      .answer_title{
+        padding-left:0.3rem;
+        line-height: 0.3rem;
+        position: relative;
+        font-size: 12px;
+        margin-bottom:0.2rem;
+        &:after{
+          content:'';
+          display: block;
+          width:0.09rem;
+          height:0.09rem;
+          background: $themeColor;
+          position: absolute;
+          top:0.1rem;
+          left:0;
+        }
+      }
+      .answer_content{
+        font-size: 10px;
+        margin-bottom:0.5rem;
+        @include textOver(3)
+      }
+      .answer_info{
+        font-size:9px;
+        .view_num{
+          font-style: normal;
+        }
+        span{
+          margin-right:0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.play_btn_mask{
+  display: none;
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.7);
+  .play_btn{
+    @include circle(1rem,transparent);
+    border:1px solid #fff;
+    @include middle;
+    cursor: pointer;
+    img{
+      @include middle;
+    }
+  }
+}
+////播放控制按钮
+//.play_progress{
+//  position: absolute;
+//  padding:0 0.2rem;
+//  @include borderBox;
+//  bottom:-18px;
+//  line-height: 20px;
+//  left:0;
+//  width:100%;
+//  color:#fff;
+//  background: #000;
+//  &>div{float:left;}
+//  .total_length{
+//    width:4.2rem;
+//    height:0.06rem;
+//    background: #888;
+//    margin-top:7px;
+//    @include borderRadius(0.03rem);
+//  }
+//  .play_length{
+//    width:0;
+//    height:6px;
+//    background: #d5d5d5;
+//    @include borderRadius(3px);
+//    position: relative;
+//    b{
+//      @include circle(12px,#d5d5d5);
+//      display: block;
+//      position: absolute;
+//      top:-3px;
+//      right:-6px;
+//      cursor: pointer;
+//    }
+//  }
+//  .time_process{
+//    font-size: 8px;
+//    margin:0 0.1rem;
+//  }
+//  .sound{
+//    position: relative;
+//    .img_box{
+//      width:0.3rem;
+//      height:0.3rem;
+//      background: url("../images/video/sound.png") center no-repeat;
+//      background-size: 100% 100%;
+//      &.mute{
+//        background: url("../images/video/mute.png") center no-repeat;
+//        background-size: 100% 100%;
+//      }
+//    }
+//    img{vertical-align: middle;cursor: pointer;}
+//    .max_sound{
+//      display: none;
+//      position: absolute;
+//      top:-146px;
+//      right:8px;
+//      width:6px;
+//      height:137px;
+//      background: #000;
+//      cursor: pointer;
+//      &.active{
+//        display: block;
+//      }
+//      .sound_length{
+//        width:100%;
+//        height:100%;
+//        background:#d5d5d5;
+//        position: absolute;
+//        bottom:0;
+//        left:0;
+//        b{
+//          @include circle(12px,#d5d5d5);
+//          position: absolute;
+//          top:-6px;
+//          left:-3px;
+//        }
+//      }
+//    }
+//  }
+//  .fullScreen{
+//    @include bgImg2(0.3rem,'video/big.png');
+//    margin-left:0.2rem;
+//  }
+//}

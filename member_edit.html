@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>会员中心</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/center.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="images/ico.png" type="image/x-icon">
+</head>
+<body>
+<!--导航-->
+<header>
+    <div class="nav-box clear">
+        <div class="logo"><img src="images/index/nav_logo.png" alt=""></div>
+        <ul class="nav_link">
+            <li class="nav_item active">网站首页</li>
+            <li class="nav_item">考证报名</li>
+            <li class="nav_item">培训成长</li>
+            <li class="nav_item">心理咨询</li>
+            <li class="nav_item">专家入驻</li>
+            <li class="nav_item">品牌展示</li>
+            <li class="nav_item">关于我们</li>
+        </ul>
+        <div class="login-entrance">
+            <a class="goLogin">登录</a><a class="goReg">注册</a>
+        </div>
+        <div class="loginAvatar">
+            <img src="images/login_avatar.png" alt="">
+        </div>
+    </div>
+</header>
+<div class="empty-top"></div>
+<p class="nav-title">
+    <a href="member_center.html">会员中心</a>
+    <span>》编辑个人信息</span>
+</p>
+<div class="main-edit-wrapper">
+
+    <div class="edit-con">
+        <div class="edit-title">
+            编辑个人信息
+        </div>
+        <div class="upList">
+            <a href="javascript:void(0);" class="uploadPreview">
+                <img class="img AvatarUrl" src="" />
+            </a>
+            <button id="avatar-btn" class="btn">点击上传</button>
+            <input type="hidden" name="avatar" value="" id="avatar">
+        </div>
+        <ul class="edit-list">
+            <li><p>昵称</p><input type="text" class="NickName" name="NickName" placeholder="请输入昵称"></li>
+            <li> <p>真实姓名</p><input type="text" class="RealName" name="RealName" placeholder="请输入真实姓名"></li>
+            <li> <p>生日</p><input type="text" class="Birthday" name="Birthday" placeholder="1992-04-09"></li>
+            <li><p>性别</p><div class="sex-box">
+                <div class="male"><b class="active">M</b><span>男</span></div>
+                <div class="female"><b>F</b><span>女</span></div>
+            </div></li>
+            <li class="address">
+                <p>所在城市</p><select class="province" name="province" id=""><option value="">省份</option></select><select class="city" name="city" id=""><option value="">地级市</option></select><select class="area" name="area" id=""><option value="">县区</option></select>
+            </li>
+            <li><p>Email</p><input type="text" class="Email" name="Email" placeholder="例：1053081188@qq.com"></li>
+            <li><p>QQ</p><input type="text" class="QQ" name="QQ" placeholder="例：1053081188"></li>
+        </ul>
+        <div class="btn submit_info">保存</div>
+    </div>
+</div>
+
+
+
+
+
+<!--返回顶部、客服-->
+<div>
+    <div class="contactHer-click"><img src="images/customerService.png" alt=""></div>
+    <div class="backTop"><img src="images/index/backtop.png" alt=""></div>
+</div>
+<div class="backTop"><img src="images/index/backtop.png" alt=""></div>
+<!--底部-->
+<footer>
+    <div class="content clear">
+        <div class="left">
+            <img src="images/qrcode.jpg" alt="">
+            <p>上海霁朝健康管理咨询有限公司</p>
+        </div>
+        <div class="right">
+            <p class="line"><a href="">快速链接 >></a></p>
+            <ul class="foot-nav clear">
+                <li><a href="testReg.html">考证报名</a></li>
+                <li><a href="training_grow.html">培训成长</a></li>
+                <li><a href="consultation.html">心理咨询</a></li>
+                <li><a href="expertsIn.html">专家入驻</a></li>
+                <li><a href="brand_display.html">品牌展示</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href=" http://eln.cnmfc.cn/welcome/index">阿拉丁智能学习</a></li>
+            </ul>
+            <div class="contact clear">
+                <div class="address">
+                    <img src="images/localize.png" alt="">
+                    <span>上海市奉贤区金汇镇金闸公路1259号3幢1367室</span> <br>
+                    <p>苏州相城区善济路158号峰汇商务广场4幢一单元1928</p>
+                </div>
+                <div class="phone">
+                    <img src="images/phone.png" alt="">
+                    <span>上海：021-60700181</span>
+                    <p>苏州：0512-69576237</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+ <script src="js/common/jquery.js"></script>
+<script src="js/common/plupload.full.min.js"></script>
+<script src="js/login.js"></script>
+<script src="js/member_edit.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+.nav_list {
+  position: fixed;
+  top: 0.9rem;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  color: #2b2b2b;
+  padding: 0 0.15rem;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+
+.nav_list li {
+  float: left;
+  width: 1.2rem;
+  text-align: center;
+  line-height: 0.9rem;
+  font-size: 12px;
+}
+
+.nav_list li.active {
+  color: #00aeef;
+  font-weight: bold;
+}
+
+.main_about {
+  padding: 0.9rem 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.main_about .nav_content > li {
+  display: none;
+  padding: 0 0.44rem;
+}
+
+.main_about .nav_content > li.active {
+  display: block;
+}
+
+.main_about .nav_content > li.company > div {
+  margin-bottom: 0.8rem;
+}
+
+.main_about .nav_content > li.company > div.img {
+  width: 7.5rem;
+  margin-left: -0.44rem;
+}
+
+.main_about .nav_content > li.company > div.img img {
+  width: 100%;
+}
+
+.main_about .nav_content > li.company > div .title {
+  font-size: 14px;
+  margin-bottom: 0.40rem;
+}
+
+.main_about .nav_content > li.company > div p {
+  line-height: 24px;
+  color: #aaa;
+}
+
+.main_about .nav_content > li.partners {
+  padding: 0;
+  margin-bottom: 3rem;
+}
+
+.main_about .nav_content > li.partners img {
+  width: 100%;
+}
+
+.main_about .nav_content > li.dynamics {
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.main_about .nav_content > li.dynamics li {
+  list-style: decimal inside;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.main_about .nav_content > li.dynamics li span {
+  display: block;
+  padding-left: 0.3rem;
+  font-size: 9px;
+}
+
+.main_about .nav_content > li.legal_notices {
+  padding: 0.44rem 0.44rem 1rem;
+  background: #1488c3;
+  color: #f5f0f1;
+}
+
+.main_about .nav_content > li.legal_notices > div {
+  margin-bottom: 0.4rem;
+}
+
+.main_about .nav_content > li.legal_notices .title {
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  left: -5px;
+  margin-bottom: 6px;
+}
+
+.main_about .nav_content > li.legal_notices p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.main_about .nav_content > li.contact_us {
+  padding-top: 0.5rem;
+}
+
+.main_about .nav_content > li.contact_us .item {
+  margin-bottom: 0.8rem;
+}
+
+.main_about .nav_content > li.contact_us .item img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.main_about .nav_content > li.contact_us .item i {
+  font-style: normal;
+  margin-right: 30px;
+}
+
+.main_about .nav_content > li.contact_us .item .title {
+  line-height: 20px;
+  font-size: 14px;
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 16px;
+}
+
+.main_about .nav_content > li.contact_us .item .title:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: #00aeef;
+}
+
+.main_about .nav_content > li.contact_us .item span {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.main_about .nav_content > li.contact_us .map_box .map_img {
+  width: 7.3rem;
+  margin-bottom: 20px;
+  margin-left: -0.34rem;
+}
+
+.main_about .nav_content > li.contact_us .map_box .map_img img {
+  width: 100%;
+}
+
+.main_about .nav_content > li.contact_us .map_box img {
+  vertical-align: top;
+  width: 0.4rem;
+}
+
+.main_about .nav_content > li.contact_us .map_box p {
+  display: inline-block;
+  width: 5.8rem;
+}
+
+.main_about .nav_content > li.recruiting {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.main_about .nav_content > li.recruiting > div {
+  line-height: 0.36rem;
+  margin-bottom: 0.5rem;
+}
+
+.main_about .nav_content > li.recruiting > div .title {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.main_about .nav_content > li.news_view {
+  padding-top: 0.4rem;
+}
+
+.main_about .nav_content > li.news_view .new_title {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.main_about .nav_content > li.news_view .time {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.main_about .nav_content > li.news_view .news_content {
+  line-height: 0.36rem;
+}

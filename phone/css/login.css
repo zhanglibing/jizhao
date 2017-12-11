@@ -1,0 +1,148 @@
+.login-wrapper p {
+  display: block;
+  line-height: 20px;
+  font-size: 14px;
+  position: relative;
+  padding: 10px 0;
+}
+
+.login-wrapper p.sending {
+  color: #e39103;
+}
+
+.login-wrapper input {
+  width: 100%;
+  height: 0.8rem;
+  border: 1px solid #aaa;
+  padding-left: 0.2rem;
+  box-sizing: border-box;
+  font-size: 14px;
+  -webkit-border-radius: 0.04rem;
+  -moz-border-radius: 0.04rem;
+  border-radius: 0.04rem;
+}
+
+.login-wrapper .wrapper {
+  padding: 0.8rem 0.44rem;
+  box-sizing: border-box;
+}
+
+.login-wrapper .wrapper .row {
+  margin-bottom: 0.2rem;
+}
+
+.login-wrapper .wrapper .row.margin-max {
+  margin-bottom: 0.6rem;
+}
+
+.login-wrapper .wrapper .row .imgCode {
+  width: 2.4rem;
+  height: 0.76rem;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  cursor: pointer;
+}
+
+.login-wrapper .wrapper .sendCodeBox {
+  font-size: 14px;
+}
+
+.login-wrapper .wrapper .sendCodeBox span {
+  display: inline-block;
+}
+
+.login-wrapper .wrapper .sendCodeBox .btn {
+  width: 80px;
+  line-height: 26px;
+  margin-left: 30px;
+  font-size: 14px;
+  border-radius: 13px;
+  display: inline-block;
+}
+
+.login-wrapper .wrapper .sendCodeBox .btn:disabled {
+  background: transparent;
+  color: #000;
+}
+
+.login-wrapper .wrapper.backPsdSet-box .sendCodeBox {
+  font-size: 14px;
+}
+
+.login-wrapper .wrapper.backPsdSet-box .sendCodeBox span {
+  display: inline-block;
+}
+
+.login-wrapper .wrapper.backPsdSet-box .sendCodeBox .btn {
+  float: right;
+}
+
+.login-wrapper .wrapper .help {
+  margin-bottom: 0.6rem;
+  line-height: 0.7rem;
+}
+
+.login-wrapper .wrapper .help .goReg {
+  float: left;
+  color: #1387c2;
+}
+
+.login-wrapper .wrapper .help .goForget {
+  float: right;
+}
+
+.login-wrapper .wrapper .agreement {
+  margin-bottom: 16px;
+}
+
+.login-wrapper .wrapper .agreement a {
+  color: #1387c2;
+  text-decoration: underline;
+  padding: 0.1rem;
+}
+
+.login-wrapper .wrapper .goLogin {
+  text-align: right;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #1387c2;
+}
+
+.login-wrapper .wrapper .sex-box {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.login-wrapper .wrapper .sex-box > div {
+  display: inline-block;
+  line-height: 22px;
+}
+
+.login-wrapper .wrapper .sex-box > div.male {
+  margin-right: 50px;
+}
+
+.login-wrapper .wrapper .sex-box b {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  box-sizing: border-box;
+  vertical-align: top;
+  border: 5px solid #aaa;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0;
+  margin-right: 5px;
+}
+
+.login-wrapper .wrapper .sex-box b.active {
+  border-color: #1387c2;
+}
+
+.login-wrapper .wrapper > .btn {
+  display: block;
+  width: 3.5rem;
+  font-size: 16px;
+  margin: 1.4rem auto 0;
+}

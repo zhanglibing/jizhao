@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>专家入驻</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/expertsIn.css">
+</head>
+<body>
+<!--导航-->
+<header>
+    <div class="nav-box">
+        <span class="logo"></span>
+        <span class="title"><img src="images/alading.png" alt=""></span>
+        <span class="login"></span>
+        <span class="menu"></span>
+    </div>
+    <div class="menu_box">
+        <div class="mask"></div>
+        <ul class="menu_list">
+            <li>网站首页</li>
+            <li>考证报名</li>
+            <li>培训成长</li>
+            <li>心理咨询</li>
+            <li class="active">专家入驻</li>
+            <li>品牌展示</li>
+            <li>关于我们</li>
+        </ul>
+    </div>
+</header>
+
+<!--专家入驻banner-->
+<div class="banner-expert">
+   <div class="needYou"></div>
+    <p>
+        心理咨询是一种实践性很强的职业，我们为您提供了最专业、最广阔的提升与展示平台，以及完善的成长体系建设，让您在释放自身能量的同时，也可以实现自我完善。我们能够并肩战斗，用更优质的服务获取到更多的用户，用好互联网这个工具，推动心理咨询行业的发展和社会化普及并提升心理咨询师收益。
+    </p>
+    <div class="list clear">
+        <span>自由的工作时间</span><span>丰富的案例督导</span>
+        <span>丰厚的咨询报酬</span><span>宝贵的成长机会</span>
+    </div>
+    <a class="join-us btn" href="javascript:;">Join Us/加入我们</a>
+</div>
+
+
+
+<div class="backTop"><img src="images/index/backtop.png" alt=""></div>
+<!--底部-->
+<footer>
+    <div class="content clear">
+        <div class="left">
+            <img src="images/qrcode.jpg" alt="">
+            <p>上海霁朝健康管理咨询有限公司</p>
+        </div>
+        <div class="right">
+            <div class="address">
+                <img src="images/localize.png" alt="">
+                <p>上海市奉贤区金汇镇金闸公路1259号3幢1367室</p>
+                <p>苏州相城区善济路158号峰汇商务广场4幢一单元1928</p>
+            </div>
+            <div class="phone">
+                <img src="images/phone.png" alt="">
+                <p>上海：<a href="tel:021-60700181"></a>021-60700181</p>
+                <p> 苏州：<a href="tel:0512-69576237">0512-69576237</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../js/common/jquery.js"></script>
+<script src="js/login.js"></script><script src="js/login_data.js"></script>
+<script>
+    $('.join-us').on('click', function () {
+        if (userInfo) {
+            if(userInfo.StatusForConsultant==4){//审核通过
+                window.location.href="expert_center.html";
+                return false;
+            }
+            window.location.href = "expertsAudit.html";
+            return false;
+        }
+        window.location.href = "login.html";
+    })
+</script>
+</body>
+</html>

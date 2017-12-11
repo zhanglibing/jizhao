@@ -1,0 +1,387 @@
+@import "mixins";
+$themeColor:#1387c2;
+
+//专家入驻页面
+.banner-expert{
+  position: relative;
+  width:100%;
+  margin-bottom:-1%;
+  color:#fff;
+  &>img{width:100%;height:auto;}
+  .content{
+    position:absolute;
+    top:300px;
+    left:50%;
+    margin-left:-600px;
+    width:1200px;
+    .needYou{
+      width:495px;
+      margin:0 auto;
+      margin-bottom:50px;
+    }
+    p{
+      line-height: 24px;
+      text-align: center;
+      margin-bottom:70px;
+    }
+    .list{
+      color:$themeColor;
+      font-size: 18px;
+      width:700px;
+      margin:0 auto 80px;
+      font-weight: bold;
+      text-align: justify;
+      &:after{
+        content:'';
+        display: inline-flex;
+        width:100%;
+        height:0;
+      }
+      span{
+        display: inline-block;
+        position: relative;
+        margin-right:50px;
+        &:last-child{margin-right:0;}
+        &:before{
+          content: "";
+          display: block;
+          @include circle(6px,$themeColor);
+          position: absolute;
+          top:-20px;
+          left:50%;
+          margin-left:-3px;
+        }
+      }
+    }
+    .join-us{
+      display: block;
+      width:380px;
+      line-height: 56px;
+      @include borderRadius(28px);
+      font-size: 24px;
+      margin:0 auto;
+    }
+  }
+}
+
+
+//入驻基本信息
+.progress-box{
+  position: relative;
+  width:1200px;
+  padding-top:50px;
+  margin:0 auto 50px;
+  &>.title{
+    position: absolute;
+    top:50px;
+    left:120px;
+    line-height: 26px;
+  }
+  .beforeAfter{ //拓展
+    position: absolute;
+    top:13px;
+    display: block;
+    content:'';
+    height:1px;
+  }
+  .progress{
+    width:800px;
+    margin:0 auto;
+    padding:0 80px;
+    @include borderBox;
+    position: relative;
+    &:after,&:before{
+      @extend .beforeAfter;
+      width:80px;
+      background: #b8b8b8;
+    }
+    &:before{left:0;background:$themeColor;}
+    &:after{right:0;}
+    li{
+      width:160px;
+      display: inline-block;
+      p{
+        position: relative;
+        margin:0 auto 15px;
+        @include circle(26px,#b8b8b8);
+        text-align: center;
+        line-height: 26px;
+        color:#fff;
+         &:after,&:before{
+           @extend .beforeAfter;
+           width:67px;
+           background: #b8b8b8;
+         }
+        &:before{left:100%;}
+        &:after{right:100%;}
+      }
+      span{
+        display: block;
+        width:100%;
+        text-align: center;
+      }
+      &.active{
+        p{
+          background: $themeColor;
+          &:after,&:before{background: $themeColor;}
+        }
+      }
+    }
+  }
+}
+
+.main{
+  width:1000px;
+  @include borderBox;
+  margin:0 auto;
+  padding:40px;
+  &>li{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+}
+.basicInfo{
+  &>.btn{
+    width:263px;
+    line-height: 34px;
+    margin:0 auto;
+  }
+}
+.main-title{
+  font-size: 18px;
+  font-weight: bold;
+  width:750px;
+  padding-bottom:10px;
+  border-bottom:1px solid #eaeaea;
+  margin-bottom:30px;
+}
+.basicList{
+  &>li{
+    margin-bottom:30px;
+    &>span{
+      display: inline-block;
+      text-align: right;
+      line-height: 38px;
+      width:120px;
+      margin-right:20px;
+      font-size: 16px;
+      vertical-align: top;
+      i{color:red;}
+    }
+    &>input,&>select{
+      @include borderBox;
+      height:34px;
+      width:300px;
+      padding-left:10px;
+      border-radius: 0;
+      vertical-align: top;
+    }
+    select{width:185px;margin-right:50px;}
+    .sex-box{
+      display: inline-block;
+      font-size: 16px;
+      &>div{
+        display: inline-block;line-height: 22px;
+        &.male{margin-right:50px;}
+      }
+      b{
+        display: inline-block;
+        width:20px;
+        height:20px;
+        box-sizing: border-box;
+        vertical-align: top;
+        border:3px solid #aaa;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 0;
+        margin-right:5px;
+        &.active{
+          border-color:$themeColor;
+        }
+      }
+    }
+
+    &.lineHeight{
+      margin-bottom:40px;
+      &>span{line-height: 24px;}
+    }
+    &.avatar{
+      margin-bottom:40px;
+      .example-box{
+        margin-left:80px;
+        display: inline-block;
+        font-size: 14px;
+        img{margin:0 10px;}
+        .title{font-size: 16px;font-weight: bold;vertical-align: top;}
+        .con{
+          display: inline-block;
+          width:180px;
+          vertical-align: top;
+        }
+      }
+    }
+
+    //图片上传
+    .upList{
+      position: relative;
+      width:150px;
+      height:150px;
+      display: inline-block;
+      vertical-align: top;
+      border:1px solid #d2d2d2;
+      &>a{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background: transparent;
+        overflow: hidden;
+        img{
+          //max-width:100%;
+          //max-height:100%;
+          height:auto;
+          width:100%;
+          @include middle;
+          &.active{
+            height:100%;
+            width:auto;
+          }
+        }
+      }
+      i{
+        display: block;
+        width:100%;
+        height:100%;
+        &.defalut1{
+          background: url("../images/expret/default1.png") center no-repeat;
+        }
+        &.defalut{
+          background: url("../images/expret/default.jpg") center no-repeat;
+        }
+        &.defalut2{
+          background: url("../images/expret/default2.png") center no-repeat;
+        }
+      }
+      .btn{
+        width:100px;
+        line-height: 34px;
+        position: absolute;
+        left:50%;
+        margin-left:-50px;
+        bottom:-17px;
+      }
+    }
+  }
+}
+
+.background{
+  textarea,.edit_box{
+    display: inline-block;
+    width:500px;
+    min-height:170px;
+    padding:20px;
+    @include borderBox;
+    border:1px solid #ccc;
+    resize: vertical;
+    .tishi{
+      color:#999;
+    }
+  }
+  .btn-box{
+    width:420px;
+    margin:0 auto;
+    .btn{
+      width:200px;
+      line-height: 34px;
+      &.pre-btn{margin-right:20px;}
+    }
+  }
+  .cost-box{
+    .hours{margin-left:10px;width:auto;}
+  }
+  .agreement{
+    font-size: 12px;
+    line-height: 20px;
+    img{height:14px;display: inline-block;vertical-align: middle;margin-right:5px;}
+    a{color:$themeColor;text-decoration: underline;}
+  }
+}
+.good-list{
+  display: inline-block;
+  width:500px;
+  //li{
+  //  margin-bottom:12px;
+  //  &:nth-child(2n){
+  //    margin-left:30px;
+  //  }
+    span{
+      display: inline-block;
+      line-height: 24px;
+      width:100px;
+      text-align: center;
+      border:1px solid #ccc;
+      border-radius: 12px;
+      margin-right:8px;
+      margin-bottom:12px;
+      cursor: pointer;
+      &:nth-child(8n-3){
+        margin-left:30px;
+      }
+      &:hover,&.active{
+        background: #00aeef;
+        color:#fff;
+      }
+    }
+  //}
+}
+
+.submitOk-box{
+  text-align: center;
+  margin-bottom:50px;
+  .con{
+    @include circle(176px,$themeColor);
+    position: relative;
+    margin:0 auto 30px;
+    @include borderBox;
+    padding-top:26px;
+    color:#fff;
+    font-size: 18px;
+    .btn{
+      position: absolute;
+      line-height: 24px;
+      width:180px;
+      left:-2px;
+      bottom:16px;
+      font-size: 12px;
+      background: #00aeef;
+    }
+  }
+  .error-box{
+    .con{
+      background: #e35d83;
+      .btn{background: #f489a7;}
+    }
+    p{margin-bottom:40px;}
+  }
+  .con-btn{
+    display: inline-block;
+    line-height: 32px;
+    text-align: center;
+    width:120px;
+    border:1px solid #767676;
+    @include borderRadius(16px);
+    color:#767676;
+    cursor: pointer;
+    a{display:block;width:100%;height:100%;}
+    &.toModify{margin-right:30px;}
+    &:hover{
+      background: #00aeef;
+      border-color:#00aeef;
+      color:#fff;
+    }
+    &.takePart{display: block;width:200px;margin:0 auto;}
+  }
+}

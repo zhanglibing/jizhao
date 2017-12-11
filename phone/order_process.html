@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单处理</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<header>
+    <div class="nav-box">
+        <span class="logo"></span>
+        <span class="title"><img src="images/alading.png" alt=""></span>
+        <span class="login"></span>
+        <span class="menu"></span>
+    </div>
+    <div class="menu_box">
+        <div class="mask"></div>
+        <ul class="menu_list">
+            <li class="active">网站首页</li>
+            <li>考证报名</li>
+            <li>培训成长</li>
+            <li>心理咨询</li>
+            <li>专家入驻</li>
+            <li>品牌展示</li>
+            <li>关于我们</li>
+        </ul>
+    </div>
+</header>
+<div class="title" style="width:100%;text-align: center;padding-top:3rem;font-size: 18px;margin-bottom:0.5rem;">订单处理中...</div>
+<div class="gif" style="width:4rem;margin:0 auto;"><img src="../images/loading.gif" alt="" style="width:100%;"></div>
+
+<script src="../js/common/jquery.js"></script>
+<script src="js/login_data.js"></script>
+<script src="../js/pay.js"></script>
+<script>
+    var _pay=new Pay({isPhone:true,isProcess:true});
+    _pay.init()
+</script>
+</body>
+</html>

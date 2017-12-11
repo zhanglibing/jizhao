@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>会员中心</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/center.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<!--导航-->
+<header>
+    <div class="nav-box">
+        <span class="logo"></span>
+        <span class="title"><img src="images/alading.png" alt=""></span>
+        <span class="login"></span>
+        <span class="menu"></span>
+    </div>
+    <div class="menu_box">
+        <div class="mask"></div>
+        <ul class="menu_list">
+            <li class="active">网站首页</li>
+            <li>考证报名</li>
+            <li>培训成长</li>
+            <li>心理咨询</li>
+            <li>专家入驻</li>
+            <li>品牌展示</li>
+            <li>关于我们</li>
+        </ul>
+    </div>
+</header>
+
+<div class="main-wrapper">
+    <div class="info-box">
+        <div class="center-avatar">
+            <div class="img">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="info-con">
+            <img src="images/center/female-ava.png" alt="">
+            <p class="center-name">格林女士</p>
+            <p>普通用户</p>
+        </div>
+    </div>
+    <ul class="operation_btn_list">
+        <li><a href="member_edit.html">编辑个人信息</a> <span>》</span></li>
+        <li><a href="member_orderList.html">订单列表</a><span>》</span></li>
+        <li><a href="published_edit.html?type=topic&name=member">发表话题</a><span>》</span></li>
+        <li class="cancellation_btn">退出当前帐号<span>》</span></li>
+    </ul>
+</div>
+
+
+
+<!--返回顶部、客服-->
+<div>
+    <div class="backTop"><img src="images/index/backtop.png" alt=""></div>
+</div>
+<div class="backTop"><img src="images/index/backtop.png" alt=""></div>
+
+<script src="../js/common/jquery.js"></script>
+<script src="js/login_data.js"></script>
+<script>
+    var initCenter=new InitCenter(0);
+    initCenter.init();
+</script>
+</body>
+</html>

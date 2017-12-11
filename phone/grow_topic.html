@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>话题详情</title>
+    <link rel="stylesheet" href="css/common.css">
+    <!--<link rel="stylesheet" href="css/consultation.css">-->
+</head>
+<body>
+<!--导航-->
+<header>
+    <div class="nav-box">
+        <span class="logo"></span>
+        <span class="title"><img src="images/alading.png" alt=""></span>
+        <span class="login"></span>
+        <span class="menu"></span>
+    </div>
+    <div class="menu_box">
+        <div class="mask"></div>
+        <ul class="menu_list">
+            <li>网站首页</li>
+            <li>考证报名</li>
+            <li class="active">培训成长</li>
+            <li>心理咨询</li>
+            <li>专家入驻</li>
+            <li>品牌展示</li>
+            <li>关于我们</li>
+        </ul>
+    </div>
+
+</header>
+
+<div class="information-view-box">
+    <h1 class="information-title"></h1>
+    <div class="published">发表于：<span class="time"></span>浏览：<span class="through-total"></span></div>
+    <div class="view_img"><img src="" alt=""></div>
+    <div class="content">
+    </div>
+    <div class="revert_btn">回复</div>
+</div>
+
+<ul class="revert_items">
+    <!--<li class="revert_item ">-->
+       <!--<div class="avatar"><img src="images/cons/user-avatar.png" alt=""></div>-->
+       <!--<div class="info">-->
+           <!--<p><b class="name">张利兵</b><i>/</i><span class="type">普通用户</span></p>-->
+           <!--<p class="time">2017/08/31 23:59</p>-->
+       <!--</div>-->
+       <!--<div class="content">-->
+           <!--<p>我是一个90后，我经常做事很急躁，往往急躁就容易做错事情，我也知道自己身上存在这样的问题，也尝试过去改变，但就是改变不了，很多人都说我做事太急躁了[大哭] 包括我开车也是，我开车很快，特-->
+           <!--</p>-->
+       <!--</div>-->
+        <!--<div class="clear"><button  class="revert_btn revert_item_btn">回复</button></div>    </li>-->
+</ul>
+<div class="my_answer">
+    <h3 class="title">我的回答</h3>
+    <textarea class="edit_box" name="" id="" cols="30" rows="5" placeholder="请输入您的回答，（最少五个字）"></textarea>
+    <button class="sub_btn submit_my_answer">提交</button>
+</div>
+
+
+<div class="backTop">
+    <img src="images/index/backtop.png" alt="">
+</div>
+
+<script src="../js/common/jquery.js"></script>
+<script src="js/login_data.js"></script>
+<script src="../js/grow_topic.js"></script>
+<script>
+    var init=new Init(true);
+    init.init()
+</script>
+</body>
+</html>

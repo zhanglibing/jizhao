@@ -1,0 +1,165 @@
+@import "mixins";
+$themeColor:#00aeef;
+
+
+.nav_list{
+  position: fixed;
+  top:0.9rem;
+  left:0;
+  width:100%;
+  z-index: 50;
+  color:#2b2b2b;
+  padding:0 0.15rem;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  background: #fff;
+    li{
+      float: left;
+      width:1.2rem;
+      text-align: center;
+      line-height: 0.9rem;
+      font-size: 12px;
+      &.active{
+       color:$themeColor;
+        font-weight: bold;
+      }
+
+    }
+ }
+
+
+.main_about{
+  padding:0.9rem 0;
+  @include borderBox;
+  margin:0 auto;
+  .nav_content{
+    &>li{
+      display: none;
+      padding:0 0.44rem;
+      &.active{
+        display: block;
+      }
+      &.company>div{
+        margin-bottom:0.8rem;
+        &.img{
+          width:7.5rem;
+          margin-left:-0.44rem;
+          img{
+            width:100%;
+          }
+        }
+        .title{
+          font-size: 14px;
+          margin-bottom:0.40rem;
+        }
+        p{
+          line-height: 24px;
+          color:#aaa;
+        }
+      }
+      &.partners{
+        padding:0;
+        margin-bottom:3rem;
+        img{
+          width:100%;
+        }
+      }
+      //最新动态
+      &.dynamics{
+        padding-top:20px;
+        font-size: 12px;
+         li{
+           list-style: decimal inside;
+           margin-bottom:12px;
+           cursor: pointer;
+           span{
+             display: block;
+             padding-left:0.3rem;
+             font-size: 9px;
+           }
+         }
+      }
+      //法律申明
+      &.legal_notices{
+        padding:0.44rem 0.44rem 1rem;
+        background: #1488c3;
+        color:#f5f0f1;
+        &>div{margin-bottom:0.4rem;}
+        .title{
+          font-size: 14px;color:#fff;
+          position: relative;
+          left:-5px;
+          margin-bottom:6px;
+        }
+        p{font-size: 12px;line-height: 20px;}
+      }
+      //联系我们
+      &.contact_us{
+         padding-top:0.5rem;
+        .item{
+             margin-bottom:0.8rem;
+            img{vertical-align: middle;margin-right:8px;}
+            i{font-style: normal;margin-right:30px;}
+            .title{
+              line-height: 20px;
+              font-size: 14px;
+              position: relative;
+              padding-left:10px;
+              margin-bottom:16px;
+              &:before{
+                position: absolute;
+                top:0;
+                left:0;
+                content:"";
+                display: block;
+                width:4px;
+                height:20px;
+                background: $themeColor;
+              }
+            }
+            span{
+              display: inline-block;
+              margin-bottom:8px;
+            }
+          }
+        .map_box{
+          .map_img{
+            width:7.3rem;
+            margin-bottom:20px;
+            margin-left:-0.34rem;
+            img{
+              width:100%;
+            }
+          }
+          img{vertical-align: top;width:0.4rem;  }
+          p{display: inline-block;width:5.8rem;}
+        }
+      }
+      &.recruiting{
+        padding-top:0.5rem;
+        padding-bottom:0.5rem;
+        &>div{
+          line-height:0.36rem;
+          margin-bottom:0.5rem;
+          .title{font-size: 14px;margin-bottom:6px;}
+        }
+      }
+
+      &.news_view{
+        padding-top:0.4rem;
+        .new_title{
+          font-size: 16px;
+          margin-bottom:4px;
+        }
+        .time{
+          margin-bottom:20px;
+          display: block;
+        }
+        .news_content{
+          line-height: 0.36rem;
+        }
+      }
+    }
+
+  }
+}
